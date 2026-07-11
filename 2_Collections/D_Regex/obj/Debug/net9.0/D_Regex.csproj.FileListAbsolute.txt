@@ -1,0 +1,14 @@
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/D_Regex/bin/Debug/net9.0/D_Regex
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/D_Regex/bin/Debug/net9.0/D_Regex.deps.json
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/D_Regex/bin/Debug/net9.0/D_Regex.runtimeconfig.json
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/D_Regex/bin/Debug/net9.0/D_Regex.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/D_Regex/bin/Debug/net9.0/D_Regex.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/D_Regex/obj/Debug/net9.0/D_Regex.GeneratedMSBuildEditorConfig.editorconfig
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/D_Regex/obj/Debug/net9.0/D_Regex.AssemblyInfoInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/D_Regex/obj/Debug/net9.0/D_Regex.AssemblyInfo.cs
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/D_Regex/obj/Debug/net9.0/D_Regex.csproj.CoreCompileInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/D_Regex/obj/Debug/net9.0/D_Regex.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/D_Regex/obj/Debug/net9.0/refint/D_Regex.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/D_Regex/obj/Debug/net9.0/D_Regex.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/D_Regex/obj/Debug/net9.0/D_Regex.genruntimeconfig.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/D_Regex/obj/Debug/net9.0/ref/D_Regex.dll

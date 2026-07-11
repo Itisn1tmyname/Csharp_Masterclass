@@ -1,0 +1,14 @@
+E:\Programme\Csharp_Masterclass\1_OOP\A_Properties\bin\Debug\net9.0\A_Properties.exe
+E:\Programme\Csharp_Masterclass\1_OOP\A_Properties\bin\Debug\net9.0\A_Properties.deps.json
+E:\Programme\Csharp_Masterclass\1_OOP\A_Properties\bin\Debug\net9.0\A_Properties.runtimeconfig.json
+E:\Programme\Csharp_Masterclass\1_OOP\A_Properties\bin\Debug\net9.0\A_Properties.dll
+E:\Programme\Csharp_Masterclass\1_OOP\A_Properties\bin\Debug\net9.0\A_Properties.pdb
+E:\Programme\Csharp_Masterclass\1_OOP\A_Properties\obj\Debug\net9.0\A_Properties.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programme\Csharp_Masterclass\1_OOP\A_Properties\obj\Debug\net9.0\A_Properties.AssemblyInfoInputs.cache
+E:\Programme\Csharp_Masterclass\1_OOP\A_Properties\obj\Debug\net9.0\A_Properties.AssemblyInfo.cs
+E:\Programme\Csharp_Masterclass\1_OOP\A_Properties\obj\Debug\net9.0\A_Properties.csproj.CoreCompileInputs.cache
+E:\Programme\Csharp_Masterclass\1_OOP\A_Properties\obj\Debug\net9.0\A_Properties.dll
+E:\Programme\Csharp_Masterclass\1_OOP\A_Properties\obj\Debug\net9.0\refint\A_Properties.dll
+E:\Programme\Csharp_Masterclass\1_OOP\A_Properties\obj\Debug\net9.0\A_Properties.pdb
+E:\Programme\Csharp_Masterclass\1_OOP\A_Properties\obj\Debug\net9.0\A_Properties.genruntimeconfig.cache
+E:\Programme\Csharp_Masterclass\1_OOP\A_Properties\obj\Debug\net9.0\ref\A_Properties.dll

@@ -1,0 +1,14 @@
+/home/mage/Documents/Programme/Csharp_Masterclass/3_EventsAndDelegates/A_Delegates/bin/Debug/net9.0/A_Delegates
+/home/mage/Documents/Programme/Csharp_Masterclass/3_EventsAndDelegates/A_Delegates/bin/Debug/net9.0/A_Delegates.deps.json
+/home/mage/Documents/Programme/Csharp_Masterclass/3_EventsAndDelegates/A_Delegates/bin/Debug/net9.0/A_Delegates.runtimeconfig.json
+/home/mage/Documents/Programme/Csharp_Masterclass/3_EventsAndDelegates/A_Delegates/bin/Debug/net9.0/A_Delegates.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/3_EventsAndDelegates/A_Delegates/bin/Debug/net9.0/A_Delegates.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/3_EventsAndDelegates/A_Delegates/obj/Debug/net9.0/A_Delegates.GeneratedMSBuildEditorConfig.editorconfig
+/home/mage/Documents/Programme/Csharp_Masterclass/3_EventsAndDelegates/A_Delegates/obj/Debug/net9.0/A_Delegates.AssemblyInfoInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/3_EventsAndDelegates/A_Delegates/obj/Debug/net9.0/A_Delegates.AssemblyInfo.cs
+/home/mage/Documents/Programme/Csharp_Masterclass/3_EventsAndDelegates/A_Delegates/obj/Debug/net9.0/A_Delegates.csproj.CoreCompileInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/3_EventsAndDelegates/A_Delegates/obj/Debug/net9.0/A_Delegates.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/3_EventsAndDelegates/A_Delegates/obj/Debug/net9.0/refint/A_Delegates.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/3_EventsAndDelegates/A_Delegates/obj/Debug/net9.0/A_Delegates.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/3_EventsAndDelegates/A_Delegates/obj/Debug/net9.0/A_Delegates.genruntimeconfig.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/3_EventsAndDelegates/A_Delegates/obj/Debug/net9.0/ref/A_Delegates.dll

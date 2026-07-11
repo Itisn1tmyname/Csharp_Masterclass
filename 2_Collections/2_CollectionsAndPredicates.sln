@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_ListsAndPredicates", "A_ListsAndPredicates\A_ListsAndPredicates.csproj", "{64F3E6FF-6384-4E94-9CAB-9E3D2C4C4CE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B_Dictionaries", "B_Dictionaries\B_Dictionaries.csproj", "{8C75E962-C4E4-4112-AAD7-3D9CBFFB8B2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_StructsAndEnums", "C_StructsAndEnums\C_StructsAndEnums.csproj", "{803187BE-86FE-4FB2-BFBC-CD683D63AA26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D_Regex", "D_Regex\D_Regex.csproj", "{F7B9BA33-76C5-418B-AC51-F72C58243029}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64F3E6FF-6384-4E94-9CAB-9E3D2C4C4CE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64F3E6FF-6384-4E94-9CAB-9E3D2C4C4CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64F3E6FF-6384-4E94-9CAB-9E3D2C4C4CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64F3E6FF-6384-4E94-9CAB-9E3D2C4C4CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C75E962-C4E4-4112-AAD7-3D9CBFFB8B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C75E962-C4E4-4112-AAD7-3D9CBFFB8B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C75E962-C4E4-4112-AAD7-3D9CBFFB8B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C75E962-C4E4-4112-AAD7-3D9CBFFB8B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{803187BE-86FE-4FB2-BFBC-CD683D63AA26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{803187BE-86FE-4FB2-BFBC-CD683D63AA26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{803187BE-86FE-4FB2-BFBC-CD683D63AA26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{803187BE-86FE-4FB2-BFBC-CD683D63AA26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7B9BA33-76C5-418B-AC51-F72C58243029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B9BA33-76C5-418B-AC51-F72C58243029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B9BA33-76C5-418B-AC51-F72C58243029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B9BA33-76C5-418B-AC51-F72C58243029}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

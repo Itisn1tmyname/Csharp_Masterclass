@@ -1,0 +1,14 @@
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/B_Dictionaries/bin/Debug/net9.0/B_Dictionaries
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/B_Dictionaries/bin/Debug/net9.0/B_Dictionaries.deps.json
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/B_Dictionaries/bin/Debug/net9.0/B_Dictionaries.runtimeconfig.json
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/B_Dictionaries/bin/Debug/net9.0/B_Dictionaries.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/B_Dictionaries/bin/Debug/net9.0/B_Dictionaries.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/B_Dictionaries/obj/Debug/net9.0/B_Dictionaries.GeneratedMSBuildEditorConfig.editorconfig
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/B_Dictionaries/obj/Debug/net9.0/B_Dictionaries.AssemblyInfoInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/B_Dictionaries/obj/Debug/net9.0/B_Dictionaries.AssemblyInfo.cs
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/B_Dictionaries/obj/Debug/net9.0/B_Dictionaries.csproj.CoreCompileInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/B_Dictionaries/obj/Debug/net9.0/B_Dictionaries.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/B_Dictionaries/obj/Debug/net9.0/refint/B_Dictionaries.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/B_Dictionaries/obj/Debug/net9.0/B_Dictionaries.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/B_Dictionaries/obj/Debug/net9.0/B_Dictionaries.genruntimeconfig.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/B_Dictionaries/obj/Debug/net9.0/ref/B_Dictionaries.dll

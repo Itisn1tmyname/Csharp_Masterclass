@@ -1,0 +1,14 @@
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/C_StructsAndEnums/bin/Debug/net9.0/C_StructsAndEnums
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/C_StructsAndEnums/bin/Debug/net9.0/C_StructsAndEnums.deps.json
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/C_StructsAndEnums/bin/Debug/net9.0/C_StructsAndEnums.runtimeconfig.json
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/C_StructsAndEnums/bin/Debug/net9.0/C_StructsAndEnums.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/C_StructsAndEnums/bin/Debug/net9.0/C_StructsAndEnums.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/C_StructsAndEnums/obj/Debug/net9.0/C_StructsAndEnums.GeneratedMSBuildEditorConfig.editorconfig
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/C_StructsAndEnums/obj/Debug/net9.0/C_StructsAndEnums.AssemblyInfoInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/C_StructsAndEnums/obj/Debug/net9.0/C_StructsAndEnums.AssemblyInfo.cs
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/C_StructsAndEnums/obj/Debug/net9.0/C_StructsAndEnums.csproj.CoreCompileInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/C_StructsAndEnums/obj/Debug/net9.0/C_StructsAndEnums.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/C_StructsAndEnums/obj/Debug/net9.0/refint/C_StructsAndEnums.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/C_StructsAndEnums/obj/Debug/net9.0/C_StructsAndEnums.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/C_StructsAndEnums/obj/Debug/net9.0/C_StructsAndEnums.genruntimeconfig.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/C_StructsAndEnums/obj/Debug/net9.0/ref/C_StructsAndEnums.dll

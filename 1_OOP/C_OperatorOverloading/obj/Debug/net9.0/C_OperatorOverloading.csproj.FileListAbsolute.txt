@@ -1,0 +1,14 @@
+E:\Programme\Csharp_Masterclass\1_OOP\C_OperatorOverloading\bin\Debug\net9.0\C_OperatorOverloading.exe
+E:\Programme\Csharp_Masterclass\1_OOP\C_OperatorOverloading\bin\Debug\net9.0\C_OperatorOverloading.deps.json
+E:\Programme\Csharp_Masterclass\1_OOP\C_OperatorOverloading\bin\Debug\net9.0\C_OperatorOverloading.runtimeconfig.json
+E:\Programme\Csharp_Masterclass\1_OOP\C_OperatorOverloading\bin\Debug\net9.0\C_OperatorOverloading.dll
+E:\Programme\Csharp_Masterclass\1_OOP\C_OperatorOverloading\bin\Debug\net9.0\C_OperatorOverloading.pdb
+E:\Programme\Csharp_Masterclass\1_OOP\C_OperatorOverloading\obj\Debug\net9.0\C_OperatorOverloading.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programme\Csharp_Masterclass\1_OOP\C_OperatorOverloading\obj\Debug\net9.0\C_OperatorOverloading.AssemblyInfoInputs.cache
+E:\Programme\Csharp_Masterclass\1_OOP\C_OperatorOverloading\obj\Debug\net9.0\C_OperatorOverloading.AssemblyInfo.cs
+E:\Programme\Csharp_Masterclass\1_OOP\C_OperatorOverloading\obj\Debug\net9.0\C_OperatorOverloading.csproj.CoreCompileInputs.cache
+E:\Programme\Csharp_Masterclass\1_OOP\C_OperatorOverloading\obj\Debug\net9.0\C_OperatorOverloading.dll
+E:\Programme\Csharp_Masterclass\1_OOP\C_OperatorOverloading\obj\Debug\net9.0\refint\C_OperatorOverloading.dll
+E:\Programme\Csharp_Masterclass\1_OOP\C_OperatorOverloading\obj\Debug\net9.0\C_OperatorOverloading.pdb
+E:\Programme\Csharp_Masterclass\1_OOP\C_OperatorOverloading\obj\Debug\net9.0\C_OperatorOverloading.genruntimeconfig.cache
+E:\Programme\Csharp_Masterclass\1_OOP\C_OperatorOverloading\obj\Debug\net9.0\ref\C_OperatorOverloading.dll

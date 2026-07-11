@@ -1,0 +1,14 @@
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/F_Interfaces/bin/Debug/net9.0/F_Interfaces
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/F_Interfaces/bin/Debug/net9.0/F_Interfaces.deps.json
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/F_Interfaces/bin/Debug/net9.0/F_Interfaces.runtimeconfig.json
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/F_Interfaces/bin/Debug/net9.0/F_Interfaces.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/F_Interfaces/bin/Debug/net9.0/F_Interfaces.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/F_Interfaces/obj/Debug/net9.0/F_Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/F_Interfaces/obj/Debug/net9.0/F_Interfaces.AssemblyInfoInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/F_Interfaces/obj/Debug/net9.0/F_Interfaces.AssemblyInfo.cs
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/F_Interfaces/obj/Debug/net9.0/F_Interfaces.csproj.CoreCompileInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/F_Interfaces/obj/Debug/net9.0/F_Interfaces.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/F_Interfaces/obj/Debug/net9.0/refint/F_Interfaces.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/F_Interfaces/obj/Debug/net9.0/F_Interfaces.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/F_Interfaces/obj/Debug/net9.0/F_Interfaces.genruntimeconfig.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/F_Interfaces/obj/Debug/net9.0/ref/F_Interfaces.dll

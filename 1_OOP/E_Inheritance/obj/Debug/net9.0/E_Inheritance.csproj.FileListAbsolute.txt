@@ -1,0 +1,14 @@
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/E_Inheritance/bin/Debug/net9.0/E_Inheritance
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/E_Inheritance/bin/Debug/net9.0/E_Inheritance.deps.json
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/E_Inheritance/bin/Debug/net9.0/E_Inheritance.runtimeconfig.json
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/E_Inheritance/bin/Debug/net9.0/E_Inheritance.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/E_Inheritance/bin/Debug/net9.0/E_Inheritance.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/E_Inheritance/obj/Debug/net9.0/E_Inheritance.GeneratedMSBuildEditorConfig.editorconfig
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/E_Inheritance/obj/Debug/net9.0/E_Inheritance.AssemblyInfoInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/E_Inheritance/obj/Debug/net9.0/E_Inheritance.AssemblyInfo.cs
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/E_Inheritance/obj/Debug/net9.0/E_Inheritance.csproj.CoreCompileInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/E_Inheritance/obj/Debug/net9.0/E_Inheritance.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/E_Inheritance/obj/Debug/net9.0/refint/E_Inheritance.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/E_Inheritance/obj/Debug/net9.0/E_Inheritance.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/E_Inheritance/obj/Debug/net9.0/E_Inheritance.genruntimeconfig.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/1_OOP/E_Inheritance/obj/Debug/net9.0/ref/E_Inheritance.dll

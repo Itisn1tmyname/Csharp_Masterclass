@@ -1,0 +1,111 @@
+﻿<Window x:Class="G_CurrencyConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:G_CurrencyConverter"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        mc:Ignorable="d"
+        Title="Currency Converter" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" >
+    <Grid ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Label Grid.Column="1" Content="Currency Converter" HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center" Width="1000" Height="50"
+               FontSize="25" Foreground="#ec2075" />
+        
+        <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Label Content="Converted Currency" FontSize="20" HorizontalContentAlignment="Center" Width="1000"/>
+            <Label x:Name="CurrencyResultLabel" FontSize="20" HorizontalContentAlignment="Center" Width="1000"/>
+        </StackPanel>
+        
+        <Border Grid.Row="2" Grid.Column="1"  CornerRadius="10" BorderThickness="0" Width="800">
+            <!-- <Border.BorderBrush> -->
+            <!--     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1"> -->
+            <!--         <GradientStop Color="#ec2075" Offset="0.0"/> -->
+            <!--         <GradientStop Color="#f33944" Offset="1.0"/> -->
+            <!--     </LinearGradientBrush> -->
+            <!-- </Border.BorderBrush> -->
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#ec2075" Offset="0.0"/>
+                    <GradientStop Color="#f33944" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <!-- <Rectangle Grid.Row="2" Width="792" Height="142" > -->
+            <!--     <Rectangle.Fill> -->
+            <!--         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1"> -->
+            <!--             <GradientStop Color="#ec2075" Offset="0.0"/> -->
+            <!--             <GradientStop Color="#f33944" Offset="1.0"/> -->
+            <!--         </LinearGradientBrush> -->
+            <!--     </Rectangle.Fill> -->
+            <!-- </Rectangle>     -->
+        </Border>
+        
+        <Grid  Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Margin="0 25" 
+               ShowGridLines="False" Width="750">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="33"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="240"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Label Grid.Row="0" Grid.Column="0" Content="Enter Amount : " FontSize="20" Foreground="White"/>
+            <Label Grid.Row="0" Grid.Column="2" Content="From : " FontSize="20" Foreground="White"/>
+            <Label Grid.Row="0" Grid.Column="6" Content="To : " FontSize="20" Foreground="White"/>
+            
+            <TextBox x:Name="CurrencyTxtBx" Grid.Row="1" Grid.Column="0"  
+                     FontSize="20" TextInput="CurrencyTxtBx_OnTextInput"/>
+            <ComboBox x:Name="FromComboBox" Grid.Row="1" Grid.Column="2"  FontSize="20"/>
+            <fa:ImageAwesome Grid.Row="1" Grid.Column="4" Icon="Exchange" Height="30" Width="30" Foreground="White"/>
+            <ComboBox x:Name="ToComboBox" Grid.Row="1" Grid.Column="6"  FontSize="20"/>
+            
+        </Grid>
+        
+        
+        <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal"
+                    HorizontalAlignment="Center" VerticalAlignment="Center">
+            
+            <Button Content="Convert" Width="150" Padding="0 5" 
+                    Foreground="White" Margin="10 0" FontSize="20"
+                    BorderThickness="0" Click="ConvertButton_OnClick"
+                    Style="{StaticResource ButtonRound}">
+                <!-- <Button.Background> -->
+                <!--     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1"> -->
+                <!--         <GradientStop Color="#ec2075" Offset="0.0"/> -->
+                <!--         <GradientStop Color="#f33944" Offset="1.0"/> -->
+                <!--     </LinearGradientBrush> -->
+                <!-- </Button.Background> -->
+                
+                <!-- See App.xaml -->
+                
+            </Button>
+            
+            <Button Content="Clear" Width="150" Height="40" 
+                    Foreground="White" Margin="10 0" FontSize="20"
+                    BorderThickness="0" Click="ClearButton_OnClick"
+                    Style="{StaticResource ButtonRound}"/>
+            
+        </StackPanel>
+        
+    </Grid>
+</Window>

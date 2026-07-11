@@ -1,0 +1,14 @@
+/run/media/mage/E4FD-C4E5/Programme/Csharp_Masterclass/1_OOP/D_Project/bin/Debug/net9.0/D_Project
+/run/media/mage/E4FD-C4E5/Programme/Csharp_Masterclass/1_OOP/D_Project/bin/Debug/net9.0/D_Project.deps.json
+/run/media/mage/E4FD-C4E5/Programme/Csharp_Masterclass/1_OOP/D_Project/bin/Debug/net9.0/D_Project.runtimeconfig.json
+/run/media/mage/E4FD-C4E5/Programme/Csharp_Masterclass/1_OOP/D_Project/bin/Debug/net9.0/D_Project.dll
+/run/media/mage/E4FD-C4E5/Programme/Csharp_Masterclass/1_OOP/D_Project/bin/Debug/net9.0/D_Project.pdb
+/run/media/mage/E4FD-C4E5/Programme/Csharp_Masterclass/1_OOP/D_Project/obj/Debug/net9.0/D_Project.GeneratedMSBuildEditorConfig.editorconfig
+/run/media/mage/E4FD-C4E5/Programme/Csharp_Masterclass/1_OOP/D_Project/obj/Debug/net9.0/D_Project.AssemblyInfoInputs.cache
+/run/media/mage/E4FD-C4E5/Programme/Csharp_Masterclass/1_OOP/D_Project/obj/Debug/net9.0/D_Project.AssemblyInfo.cs
+/run/media/mage/E4FD-C4E5/Programme/Csharp_Masterclass/1_OOP/D_Project/obj/Debug/net9.0/D_Project.csproj.CoreCompileInputs.cache
+/run/media/mage/E4FD-C4E5/Programme/Csharp_Masterclass/1_OOP/D_Project/obj/Debug/net9.0/D_Project.dll
+/run/media/mage/E4FD-C4E5/Programme/Csharp_Masterclass/1_OOP/D_Project/obj/Debug/net9.0/refint/D_Project.dll
+/run/media/mage/E4FD-C4E5/Programme/Csharp_Masterclass/1_OOP/D_Project/obj/Debug/net9.0/D_Project.pdb
+/run/media/mage/E4FD-C4E5/Programme/Csharp_Masterclass/1_OOP/D_Project/obj/Debug/net9.0/D_Project.genruntimeconfig.cache
+/run/media/mage/E4FD-C4E5/Programme/Csharp_Masterclass/1_OOP/D_Project/obj/Debug/net9.0/ref/D_Project.dll

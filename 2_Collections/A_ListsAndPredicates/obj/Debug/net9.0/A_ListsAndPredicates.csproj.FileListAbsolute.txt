@@ -1,0 +1,14 @@
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/A_ListsAndPredicates/bin/Debug/net9.0/A_ListsAndPredicates
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/A_ListsAndPredicates/bin/Debug/net9.0/A_ListsAndPredicates.deps.json
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/A_ListsAndPredicates/bin/Debug/net9.0/A_ListsAndPredicates.runtimeconfig.json
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/A_ListsAndPredicates/bin/Debug/net9.0/A_ListsAndPredicates.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/A_ListsAndPredicates/bin/Debug/net9.0/A_ListsAndPredicates.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/A_ListsAndPredicates/obj/Debug/net9.0/A_ListsAndPredicates.GeneratedMSBuildEditorConfig.editorconfig
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/A_ListsAndPredicates/obj/Debug/net9.0/A_ListsAndPredicates.AssemblyInfoInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/A_ListsAndPredicates/obj/Debug/net9.0/A_ListsAndPredicates.AssemblyInfo.cs
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/A_ListsAndPredicates/obj/Debug/net9.0/A_ListsAndPredicates.csproj.CoreCompileInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/A_ListsAndPredicates/obj/Debug/net9.0/A_ListsAndPredicates.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/A_ListsAndPredicates/obj/Debug/net9.0/refint/A_ListsAndPredicates.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/A_ListsAndPredicates/obj/Debug/net9.0/A_ListsAndPredicates.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/A_ListsAndPredicates/obj/Debug/net9.0/A_ListsAndPredicates.genruntimeconfig.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/2_Collections/A_ListsAndPredicates/obj/Debug/net9.0/ref/A_ListsAndPredicates.dll

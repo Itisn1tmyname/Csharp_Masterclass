@@ -1,0 +1,14 @@
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\C_EventsTemperature\bin\Debug\net9.0\C_EventsTemperature.exe
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\C_EventsTemperature\bin\Debug\net9.0\C_EventsTemperature.deps.json
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\C_EventsTemperature\bin\Debug\net9.0\C_EventsTemperature.runtimeconfig.json
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\C_EventsTemperature\bin\Debug\net9.0\C_EventsTemperature.dll
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\C_EventsTemperature\bin\Debug\net9.0\C_EventsTemperature.pdb
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\C_EventsTemperature\obj\Debug\net9.0\C_EventsTemperature.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\C_EventsTemperature\obj\Debug\net9.0\C_EventsTemperature.AssemblyInfoInputs.cache
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\C_EventsTemperature\obj\Debug\net9.0\C_EventsTemperature.AssemblyInfo.cs
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\C_EventsTemperature\obj\Debug\net9.0\C_EventsTemperature.csproj.CoreCompileInputs.cache
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\C_EventsTemperature\obj\Debug\net9.0\C_EventsTemperature.dll
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\C_EventsTemperature\obj\Debug\net9.0\refint\C_EventsTemperature.dll
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\C_EventsTemperature\obj\Debug\net9.0\C_EventsTemperature.pdb
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\C_EventsTemperature\obj\Debug\net9.0\C_EventsTemperature.genruntimeconfig.cache
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\C_EventsTemperature\obj\Debug\net9.0\ref\C_EventsTemperature.dll

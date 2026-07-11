@@ -1,0 +1,14 @@
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\B_Events\bin\Debug\net9.0\B_Events.exe
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\B_Events\bin\Debug\net9.0\B_Events.deps.json
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\B_Events\bin\Debug\net9.0\B_Events.runtimeconfig.json
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\B_Events\bin\Debug\net9.0\B_Events.dll
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\B_Events\bin\Debug\net9.0\B_Events.pdb
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\B_Events\obj\Debug\net9.0\B_Events.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\B_Events\obj\Debug\net9.0\B_Events.AssemblyInfoInputs.cache
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\B_Events\obj\Debug\net9.0\B_Events.AssemblyInfo.cs
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\B_Events\obj\Debug\net9.0\B_Events.csproj.CoreCompileInputs.cache
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\B_Events\obj\Debug\net9.0\B_Events.dll
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\B_Events\obj\Debug\net9.0\refint\B_Events.dll
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\B_Events\obj\Debug\net9.0\B_Events.pdb
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\B_Events\obj\Debug\net9.0\B_Events.genruntimeconfig.cache
+E:\Programme\Csharp_Masterclass\3_EventsAndDelegates\B_Events\obj\Debug\net9.0\ref\B_Events.dll
