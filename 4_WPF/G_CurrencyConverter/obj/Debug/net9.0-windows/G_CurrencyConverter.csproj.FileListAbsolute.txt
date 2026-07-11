@@ -22,3 +22,4 @@ C:\Users\mgeda\OneDrive\Desktop\Programme\Csharp_Masterclass\4_WPF\G_CurrencyCon
 C:\Users\mgeda\OneDrive\Desktop\Programme\Csharp_Masterclass\4_WPF\G_CurrencyConverter\obj\Debug\net9.0-windows\G_CurrencyConverter.csproj.AssemblyReference.cache
 C:\Users\mgeda\OneDrive\Desktop\Programme\Csharp_Masterclass\4_WPF\G_CurrencyConverter\obj\Debug\net9.0-windows\G_Curren.883C61DF.Up2Date
 C:\Users\mgeda\OneDrive\Desktop\Programme\Csharp_Masterclass\4_WPF\G_CurrencyConverter\obj\Debug\net9.0-windows\App.baml
+C:\Users\mgeda\OneDrive\Desktop\Programme\Csharp_Masterclass\4_WPF\G_CurrencyConverter\obj\Debug\net9.0-windows\G_CurrencyConverter.sourcelink.json
