@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("E_CollectionListBox")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e13f9eb88b813156bc5d56c5a8afe1d4f8047b3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca93f48a0e9cfeaaf003e965010ddf8652dd6660")]
 [assembly: System.Reflection.AssemblyProductAttribute("E_CollectionListBox")]
 [assembly: System.Reflection.AssemblyTitleAttribute("E_CollectionListBox")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

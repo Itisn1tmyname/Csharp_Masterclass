@@ -5,8 +5,80 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A_Zoo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="500">
+    <Grid ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        
+        
+        <!-- Row 1: Labels and a Button-->
+        
+        <Label Grid.Row="1" Grid.Column="1" Content="Zoos" Margin="3"/>
+        <Label Grid.Row="1" Grid.Column="2" Content="Associated Animals" Margin="3"/>
+        <Button Grid.Row="1" Grid.Column="3" Content="Add Animals to Zoo" Margin="3"/>
+        
+        
+        <!-- Row 2: Listboxes-->
+        
+        <ListBox Grid.Row="2" Grid.Column="1" Margin="3">
+            <ListBoxItem Content="Tokyo"/>
+            <ListBoxItem Content="New York"/>
+            <ListBoxItem Content="Berlin"/>
+        </ListBox>
+        
+        <ListBox Grid.Row="2" Grid.Column="2" Margin="3">
+            <ListBoxItem Content="Crocodile"/>
+            <ListBoxItem Content="Shark"/>
+            <ListBoxItem Content="Monkey"/>
+        </ListBox>
+        
+        <ListBox Grid.Row="2" Grid.Column="3" Grid.RowSpan="4" Margin="3">
+            <ListBoxItem Content="Crocodile"/>
+            <ListBoxItem Content="Shark"/>
+            <ListBoxItem Content="Monkey"/>
+            <ListBoxItem Content="Parrot"/>
+            <ListBoxItem Content="Gecko"/>
+        </ListBox>
+        
+        
+        <!-- Row 3: Buttons-->
+        
+        <Button Grid.Row="3" Grid.Column="1" Content="Delete Zoo" Margin="3"/>
+        <Button Grid.Row="3" Grid.Column="2" Content="Remove Animal" Margin="3"/>
+        
+        
+        <!-- Row 4: TextBox-->
+        
+        <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="3"/>
+        
+        
+        <!-- Row 5: Buttons-->
+        
+        <Button Grid.Row="5" Grid.Column="1" Content="Add Zoo" Margin="3"/>
+        <Button Grid.Row="5" Grid.Column="2" Content="Add Animal" Margin="3"/>
 
+        
+        <!-- Row 6: Buttons-->
+        
+        <Button Grid.Row="6" Grid.Column="1" Content="Update Zoo" Margin="3"/>
+        <Button Grid.Row="6" Grid.Column="2" Content="Update Animal" Margin="3"/>
+        <Button Grid.Row="6" Grid.Column="3" Content="Delete Animal" Margin="3"/>
+
+        
     </Grid>
 </Window>
