@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\4_WPF\\G_CurrencyConverter\\G_CurrencyConverter.csproj": {}
+    "E:\\Programme\\Csharp_Masterclass\\4_WPF\\G_CurrencyConverter\\G_CurrencyConverter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\4_WPF\\G_CurrencyConverter\\G_CurrencyConverter.csproj": {
+    "E:\\Programme\\Csharp_Masterclass\\4_WPF\\G_CurrencyConverter\\G_CurrencyConverter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\4_WPF\\G_CurrencyConverter\\G_CurrencyConverter.csproj",
+        "projectUniqueName": "E:\\Programme\\Csharp_Masterclass\\4_WPF\\G_CurrencyConverter\\G_CurrencyConverter.csproj",
         "projectName": "G_CurrencyConverter",
-        "projectPath": "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\4_WPF\\G_CurrencyConverter\\G_CurrencyConverter.csproj",
-        "packagesPath": "C:\\Users\\mgeda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\4_WPF\\G_CurrencyConverter\\obj\\",
+        "projectPath": "E:\\Programme\\Csharp_Masterclass\\4_WPF\\G_CurrencyConverter\\G_CurrencyConverter.csproj",
+        "packagesPath": "C:\\Users\\GedatkeM\\.nuget\\packages\\",
+        "outputPath": "E:\\Programme\\Csharp_Masterclass\\4_WPF\\G_CurrencyConverter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mgeda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\GedatkeM\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -74,7 +74,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\mgeda\\.dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

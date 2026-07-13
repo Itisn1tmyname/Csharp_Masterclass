@@ -8,23 +8,23 @@
     "net9.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mgeda\\.nuget\\packages\\": {},
+    "C:\\Users\\GedatkeM\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\4_WPF\\D_DataBinding\\D_DataBinding.csproj",
+      "projectUniqueName": "E:\\Programme\\Csharp_Masterclass\\4_WPF\\D_DataBinding\\D_DataBinding.csproj",
       "projectName": "D_DataBinding",
-      "projectPath": "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\4_WPF\\D_DataBinding\\D_DataBinding.csproj",
-      "packagesPath": "C:\\Users\\mgeda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\4_WPF\\D_DataBinding\\obj\\",
+      "projectPath": "E:\\Programme\\Csharp_Masterclass\\4_WPF\\D_DataBinding\\D_DataBinding.csproj",
+      "packagesPath": "C:\\Users\\GedatkeM\\.nuget\\packages\\",
+      "outputPath": "E:\\Programme\\Csharp_Masterclass\\4_WPF\\D_DataBinding\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mgeda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\GedatkeM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -75,7 +75,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\mgeda\\.dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
