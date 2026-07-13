@@ -19,6 +19,8 @@ namespace G_CurrencyConverter;
 /// </summary>
 public partial class MainWindow : Window
 {
+    private byte _inputValidationCounter = (byte)0;
+    
     public MainWindow()
     {
         InitializeComponent();
@@ -54,8 +56,18 @@ public partial class MainWindow : Window
     private void CurrencyTxtBx_OnTextInput(object sender, TextCompositionEventArgs e)
     {
         //Checking input with regular Expressions. Currently accepts spacebar for some godforsaken reason.
-        Regex regex = new Regex("[0-9]+");
-        e.Handled = !regex.IsMatch(e.Text);
+        Regex regex = new Regex("[0-9.]+");
+        if (e.Text.Equals("."))
+        {
+            if (_inputValidationCounter > 0)
+                e.Handled = true;
+            else
+                _inputValidationCounter++;
+        }
+        else if (_inputValidationCounter > 0 && _inputValidationCounter++ > 2)
+            e.Handled = true;
+        else 
+            e.Handled = !regex.IsMatch(e.Text);
     }
 
     private void ConvertButton_OnClick(object sender, RoutedEventArgs e)
