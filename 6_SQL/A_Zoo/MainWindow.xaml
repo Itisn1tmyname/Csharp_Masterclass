@@ -49,7 +49,7 @@
         
         <!-- Row 4: TextBox-->
         
-        <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="3"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="3" x:Name="inputTextBox"/>
         
         
         <!-- Row 5: Buttons-->

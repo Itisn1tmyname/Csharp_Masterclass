@@ -1,0 +1,70 @@
+drop table ZooAnimal
+drop table Animal
+drop table Zoo
+
+create table Animal
+(
+    [Id]   int identity primary key,
+    [Name] nvarchar(50)
+);
+
+create table Zoo
+(
+    [Id]       int identity primary key,
+    [Location] nvarchar(50)
+);
+
+create table ZooAnimal
+(
+    [Id]       int identity primary key,
+
+    [ZooId]    int not null
+        constraint Zoo___fk references Zoo on delete cascade,
+
+    [AnimalId] int not null
+        constraint Animal___fk references Animal on delete cascade
+);
+
+insert into dbo.Zoo values ('New York')
+insert into dbo.Zoo values ('Tokyo')
+insert into dbo.Zoo values ('Berlin')
+insert into dbo.Zoo values ('Kairo')
+insert into dbo.Zoo values ('Milan')
+insert into dbo.Zoo values ('TestTest')
+ 
+insert into dbo.Animal values ('Shark')
+insert into dbo.Animal values ('Clownfish')
+insert into dbo.Animal values ('Monkey')
+insert into dbo.Animal values ('Wolf')
+insert into dbo.Animal values ('Gecko')
+insert into dbo.Animal values ('Crocodile')
+insert into dbo.Animal values ('Owl')
+insert into dbo.Animal values ('Parrot')
+insert into dbo.Animal values ('Tiger')
+insert into dbo.Animal values ('Hippy')
+insert into dbo.Animal values ('fgsadfh')
+
+
+insert into dbo.ZooAnimal values (1,1)
+insert into dbo.ZooAnimal values (1,2)
+insert into dbo.ZooAnimal values (2,3)
+insert into dbo.ZooAnimal values (2,4)
+insert into dbo.ZooAnimal values (3,5)
+insert into dbo.ZooAnimal values (3,6)
+insert into dbo.ZooAnimal values (4,7)
+insert into dbo.ZooAnimal values (4,8)
+insert into dbo.ZooAnimal values (5, 9)
+insert into dbo.ZooAnimal values (5, 10)
+insert into dbo.ZooAnimal values (5, 1)
+insert into dbo.ZooAnimal values (5, 2)
+insert into dbo.ZooAnimal values (5, 3)
+insert into dbo.ZooAnimal values (5, 6)
+insert into dbo.ZooAnimal values (5, 5)
+insert into dbo.ZooAnimal values (5, 4)
+insert into dbo.ZooAnimal values (5, 7)
+insert into dbo.ZooAnimal values (5, 8)
+insert into dbo.ZooAnimal values (6, 11)
+insert into dbo.ZooAnimal values (6, 4)
+insert into dbo.ZooAnimal values (6, 9)
+insert into dbo.ZooAnimal values (6, 10)
+insert into dbo.ZooAnimal values (6, 7)
