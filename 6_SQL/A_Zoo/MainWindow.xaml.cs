@@ -145,22 +145,23 @@ public partial class MainWindow : Window
 
     private void RemoveAnimalFromZoo_OnClick(object sender, RoutedEventArgs e)
     {
-        try
-        {
-            string query = $"delete from ZooAnimal where id = {listZooAnimals.SelectedValue}";
-            SqlCommand command = new SqlCommand(query, _sqlConnection);
-            _sqlConnection.Open();
-            command.ExecuteScalar();
-        }
-        catch (Exception exception)
-        {
-            MessageBox.Show($"{exception.Message} @ RemoveAnimalFromZoo_OnClick");
-        }
-        finally
-        {
-            _sqlConnection.Close();
-            ShowZooAnimals();
-        }
+        // try
+        // {
+        //     string query = $"delete from ZooAnimal where id = {listZooAnimals.SelectedValue}";
+        //          Funktioniert nicht weil listZooAnimals eine Liste von Animals ist, also Value von Animal bezieht
+        //     SqlCommand command = new SqlCommand(query, _sqlConnection);
+        //     _sqlConnection.Open();
+        //     command.ExecuteScalar();
+        // }
+        // catch (Exception exception)
+        // {
+        //     MessageBox.Show($"{exception.Message} @ RemoveAnimalFromZoo_OnClick");
+        // }
+        // finally
+        // {
+        //     _sqlConnection.Close();
+        //     ShowZooAnimals();
+        // }
     }
 
     private void AddZoo_OnClick(object sender, RoutedEventArgs e)
