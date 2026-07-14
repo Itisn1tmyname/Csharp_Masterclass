@@ -48,7 +48,7 @@ public partial class MainWindow : Window
         }
         catch (Exception e)
         {
-            MessageBox.Show(e.Message);
+            MessageBox.Show($"{e.Message} @ ShowZoos");
         }
     }
     
@@ -74,15 +74,16 @@ public partial class MainWindow : Window
         }
         catch (Exception e)
         {
-            MessageBox.Show(e.Message);
+            MessageBox.Show($"{e.Message} @ ShowAnimals");
         }
     }
-
-    private void ShowAssociatedAnimals()
+    
+    private void ShowZooAnimals()
     {
         try
         {
-            string query = $"select * from Animal a inner join ZooAnimal za on a.Id = za.AnimalId where za.ZooId = {listZoos.SelectedValue}";
+            string query = $"select * from Animal a inner join ZooAnimal za on a.Id = za.AnimalId where za.ZooId =" +
+                           $" {(listZoos.SelectedValue == null ? -1 : listZoos.SelectedValue)}";
             
             // string query = $"select * from Animal a inner join ZooAnimal za on a.Id = za.AnimalId where za.ZooId = @ZooId";
             // SqlCommand command = new SqlCommand(query, _sqlConnection);
@@ -106,12 +107,84 @@ public partial class MainWindow : Window
         }
         catch (Exception e)
         {
-            MessageBox.Show(e.Message);
+            MessageBox.Show($"{e.Message} @ ShowZooAnimals");
         }
     }
 
     private void ListZoos_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-        ShowAssociatedAnimals();
+        ShowZooAnimals();
+    }
+
+    private void AddAnimalToAnimalList_OnClick(object sender, RoutedEventArgs e)
+    {
+        // throw new NotImplementedException(); TODO
+    }
+
+    private void DeleteZoo_OnClick(object sender, RoutedEventArgs e)
+    {
+        try
+        {
+            string query = $"delete from Zoo where id = {listZoos.SelectedValue}";
+            // string query = $"delete from Zoo where id = @ZooId";
+            SqlCommand command = new SqlCommand(query, _sqlConnection);
+            _sqlConnection.Open();
+            // command.Parameters.AddWithValue("@ZooId", listZoos.SelectedValue);
+            command.ExecuteScalar();
+        }
+        catch (Exception exception)
+        {
+            MessageBox.Show($"{exception.Message} @ DeleteZoo_OnClick");
+        }
+        finally
+        {
+            _sqlConnection.Close();
+            ShowZoos();
+        }
+    }
+
+    private void RemoveAnimalFromZoo_OnClick(object sender, RoutedEventArgs e)
+    {
+        try
+        {
+            string query = $"delete from ZooAnimal where id = {listZooAnimals.SelectedValue}";
+            SqlCommand command = new SqlCommand(query, _sqlConnection);
+            _sqlConnection.Open();
+            command.ExecuteScalar();
+        }
+        catch (Exception exception)
+        {
+            MessageBox.Show($"{exception.Message} @ RemoveAnimalFromZoo_OnClick");
+        }
+        finally
+        {
+            _sqlConnection.Close();
+            ShowZooAnimals();
+        }
+    }
+
+    private void AddZoo_OnClick(object sender, RoutedEventArgs e)
+    {
+        // throw new NotImplementedException(); TODO
+    }
+
+    private void AddAnimalToZoo_OnClick(object sender, RoutedEventArgs e)
+    {
+        // throw new NotImplementedException(); TODO
+    }
+
+    private void RenameZooLocation_OnClick(object sender, RoutedEventArgs e)
+    {
+        // throw new NotImplementedException(); TODO
+    }
+
+    private void RenameAnimal_OnClick(object sender, RoutedEventArgs e)
+    {
+        // throw new NotImplementedException(); TODO
+    }
+
+    private void DeleteAnimalFromAnimalList_OnClick(object sender, RoutedEventArgs e)
+    {
+        // throw new NotImplementedException(); TODO
     }
 }
