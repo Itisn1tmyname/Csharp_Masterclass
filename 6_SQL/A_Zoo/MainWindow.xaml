@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A_Zoo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="500">
+        Title="Zoo Manager" Height="450" Width="500">
     <Grid ShowGridLines="False">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="35"/>
@@ -35,25 +35,11 @@
         
         <!-- Row 2: Listboxes-->
         
-        <ListBox Grid.Row="2" Grid.Column="1" Margin="3">
-            <ListBoxItem Content="Tokyo"/>
-            <ListBoxItem Content="New York"/>
-            <ListBoxItem Content="Berlin"/>
-        </ListBox>
+        <ListBox Grid.Row="2" Grid.Column="1" Margin="3" x:Name="listZoos" 
+                 SelectionChanged="ListZoos_OnSelectionChanged" SelectedIndex="-1"/>
+        <ListBox Grid.Row="2" Grid.Column="2" Margin="3" x:Name="listZooAnimals"/>
+        <ListBox Grid.Row="2" Grid.Column="3" Grid.RowSpan="4" Margin="3" x:Name="listAnimals"/>
         
-        <ListBox Grid.Row="2" Grid.Column="2" Margin="3">
-            <ListBoxItem Content="Crocodile"/>
-            <ListBoxItem Content="Shark"/>
-            <ListBoxItem Content="Monkey"/>
-        </ListBox>
-        
-        <ListBox Grid.Row="2" Grid.Column="3" Grid.RowSpan="4" Margin="3">
-            <ListBoxItem Content="Crocodile"/>
-            <ListBoxItem Content="Shark"/>
-            <ListBoxItem Content="Monkey"/>
-            <ListBoxItem Content="Parrot"/>
-            <ListBoxItem Content="Gecko"/>
-        </ListBox>
         
         
         <!-- Row 3: Buttons-->
