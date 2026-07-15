@@ -27,3 +27,4 @@ E:\Programme\Csharp_Masterclass\6_SQL\B_CurrencyConverterSQL\obj\Debug\net9.0-wi
 E:\Programme\Csharp_Masterclass\6_SQL\B_CurrencyConverterSQL\obj\Debug\net9.0-windows\ConverterWindow.g.cs
 E:\Programme\Csharp_Masterclass\6_SQL\B_CurrencyConverterSQL\obj\Debug\net9.0-windows\ControlWindow.baml
 E:\Programme\Csharp_Masterclass\6_SQL\B_CurrencyConverterSQL\obj\Debug\net9.0-windows\ConverterWindow.baml
+E:\Programme\Csharp_Masterclass\6_SQL\B_CurrencyConverterSQL\bin\Debug\net9.0-windows\B_CurrencyConverterSQL.dll.config

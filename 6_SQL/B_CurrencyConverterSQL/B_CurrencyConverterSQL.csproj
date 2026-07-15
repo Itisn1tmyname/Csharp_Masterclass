@@ -10,6 +10,7 @@
 
     <ItemGroup>
       <PackageReference Include="FontAwesome.WPF" Version="4.7.0.9" />
+      <PackageReference Include="Microsoft.Data.SqlClient" Version="7.1.0-preview2.26190.5" />
     </ItemGroup>
 
     <ItemGroup>

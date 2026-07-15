@@ -87,7 +87,7 @@ namespace B_CurrencyConverterSQL {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/B_CurrencyConverterSQL;V1.0.0.0;component/converterwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/B_CurrencyConverterSQL;component/converterwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ConverterWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
