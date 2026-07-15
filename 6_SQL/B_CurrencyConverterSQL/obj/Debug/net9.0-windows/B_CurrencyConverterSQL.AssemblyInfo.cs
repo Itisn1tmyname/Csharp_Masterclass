@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("B_CurrencyConverterSQL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d582991e6adcdb5f09055a679c103528e705ab18")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4eb133bccb0b322fccf5e9d8fdf825140e8cba4")]
 [assembly: System.Reflection.AssemblyProductAttribute("B_CurrencyConverterSQL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("B_CurrencyConverterSQL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

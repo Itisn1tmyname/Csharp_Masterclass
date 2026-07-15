@@ -41,8 +41,10 @@
             </Grid.RowDefinitions>
             <Label Grid.Row="0" Grid.Column="1" Content="Enter Amount : " FontSize="20" Foreground="White"/>
             <Label Grid.Row="0" Grid.Column="3" Content="Currency Name : " FontSize="20" Foreground="White"/>
-            <TextBox Grid.Row="1" Grid.Column="1" x:Name="textBoxAmount" FontSize="20" Margin="4"/>
-            <TextBox Grid.Row="1" Grid.Column="3" x:Name="textBoxName" FontSize="20" Margin="4"/>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="textBoxAmount" FontSize="20" Margin="4"
+                     PreviewTextInput="TextBoxAmount_OnPreviewTextInput" PreviewKeyDown="TextBoxAmount_OnPreviewKeyDown"/>
+            <TextBox Grid.Row="1" Grid.Column="3" x:Name="textBoxName" FontSize="20" Margin="4"
+                     PreviewTextInput="TextBoxName_OnPreviewTextInput" PreviewKeyDown="TextBoxName_OnPreviewKeyDown"/>
         </Grid>
         
         <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -51,10 +53,33 @@
         </StackPanel>
         
         <StackPanel Grid.Row="3" Grid.Column="1">
-            <Image Source="/Images/editing.png" ToolTip="Edit" Width="30" Height="30" Margin="5"/>
-            <Image Source="/Images/delete.png" ToolTip="Edit" Width="30" Height="30" Margin="0 0 9 0"/>
+            
         </StackPanel>
         
+        <DataGrid Grid.Row="3" Grid.Column="1" x:Name="dataGridCurrency" AutoGenerateColumns="False" Margin="10"
+                  Background="Transparent" CanUserAddRows="False" SelectionUnit="Cell" VerticalScrollBarVisibility="Auto"
+                  SelectedCellsChanged="DataGridCurrency_OnSelectedCellsChanged" HorizontalAlignment="Center">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="Id" Visibility="Hidden"/>
+                <DataGridTextColumn x:Name="Amount" Header="Amount" Width="200" IsReadOnly="True"/> <!-- CanUserResize="False" CanUserReorder="False"-->
+                <DataGridTextColumn x:Name="Name" Header="Currency Name" Width="200" IsReadOnly="True"/>
+                <DataGridTemplateColumn IsReadOnly="True" Width="40">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="/Images/delete.png" ToolTip="Delete" Width="30" Height="30" Margin="0 0 9 0"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn IsReadOnly="True" Width="40">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="/Images/editing.png" ToolTip="Edit" Width="30" Height="30" Margin="5"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+            
+        </DataGrid>
         
     </Grid>
 </UserControl>
