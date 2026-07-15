@@ -30,39 +30,42 @@
         
         <Label Grid.Row="1" Grid.Column="1" Content="Zoos" Margin="3"/>
         <Label Grid.Row="1" Grid.Column="2" Content="Associated Animals" Margin="3"/>
-        <Button Grid.Row="1" Grid.Column="3" Content="Add Animals to Zoo" Margin="3" Click="AddAnimalToAnimalList_OnClick"/>
+        <Button Grid.Row="1" Grid.Column="3" x:Name="addAnimaltoListButton" Content="Add Animal to List" Margin="3" Click="AddAnimalToAnimalList_OnClick"/>
         
         
         <!-- Row 2: Listboxes-->
         
         <ListBox Grid.Row="2" Grid.Column="1" Margin="3" x:Name="listZoos" 
-                 SelectionChanged="ListZoos_OnSelectionChanged" SelectedIndex="-1"/>
-        <ListBox Grid.Row="2" Grid.Column="2" Margin="3" x:Name="listZooAnimals"/>
-        <ListBox Grid.Row="2" Grid.Column="3" Grid.RowSpan="4" Margin="3" x:Name="listAnimals"/>
+                 SelectionChanged="ListZoos_OnSelectionChanged" GotFocus="OnZooFocus"/>
+        <ListBox Grid.Row="2" Grid.Column="2" Margin="3" x:Name="listZooAnimals"
+                 SelectionChanged="ListZooAnimals_OnSelectionChanged" GotFocus="OnZooAnimalFocus"/>
+        <ListBox Grid.Row="2" Grid.Column="3" Grid.RowSpan="4" Margin="3" x:Name="listAnimals"
+                 SelectionChanged="ListAnimals_OnSelectionChanged" GotFocus="OnAnimalFocus"/>
         
         
         <!-- Row 3: Buttons-->
         
-        <Button Grid.Row="3" Grid.Column="1" Content="Delete Zoo" Margin="3" Click="DeleteZoo_OnClick"/>
-        <Button Grid.Row="3" Grid.Column="2" Content="Remove Animal" Margin="3" Click="RemoveAnimalFromZoo_OnClick"/>
+        <Button Grid.Row="3" Grid.Column="1" x:Name="DeleteZooButton" Content="Delete Zoo" Margin="3" Click="DeleteZoo_OnClick"/>
+        <Button Grid.Row="3" Grid.Column="2" x:Name="RemoveAnimalFromZooButton" Content="Remove Animal" Margin="3" Click="RemoveAnimalFromZoo_OnClick"/>
         
         
         <!-- Row 4: TextBox-->
         
-        <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="3" x:Name="inputTextBox"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="3" x:Name="inputTextBox"
+                 TextChanged="InputTextBox_OnTextChanged"/>
         
         
         <!-- Row 5: Buttons-->
         
-        <Button Grid.Row="5" Grid.Column="1" Content="Add Zoo" Margin="3" Click="AddZoo_OnClick"/>
-        <Button Grid.Row="5" Grid.Column="2" Content="Add Animal" Margin="3" Click="AddAnimalToZoo_OnClick"/>
+        <Button Grid.Row="5" Grid.Column="1" x:Name="AddZooButton" Content="Add Zoo" Margin="3" Click="AddZoo_OnClick"/>
+        <Button Grid.Row="5" Grid.Column="2" x:Name="AddAnimalToZooButton" Content="Add Animal to Zoo" Margin="3" Click="AddAnimalToZoo_OnClick"/>
 
         
         <!-- Row 6: Buttons-->
         
-        <Button Grid.Row="6" Grid.Column="1" Content="Update Zoo" Margin="3" Click="RenameZooLocation_OnClick"/>
-        <Button Grid.Row="6" Grid.Column="2" Content="Update Animal" Margin="3" Click="RenameAnimal_OnClick"/>
-        <Button Grid.Row="6" Grid.Column="3" Content="Delete Animal" Margin="3" Click="DeleteAnimalFromAnimalList_OnClick"/>
+        <Button Grid.Row="6" Grid.Column="1" x:Name="RenameZooLocationButton" Content="Rename Zoo" Margin="3" Click="RenameZooLocation_OnClick"/>
+        <Button Grid.Row="6" Grid.Column="2" x:Name="RenameAnimalButton" Content="Rename Animal" Margin="3" Click="RenameAnimal_OnClick"/>
+        <Button Grid.Row="6" Grid.Column="3" x:Name="DeleteAnimalFromListButton" Content="Delete Animal" Margin="3" Click="DeleteAnimalFromAnimalList_OnClick"/>
 
         
     </Grid>
