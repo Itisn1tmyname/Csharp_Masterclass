@@ -8,11 +8,11 @@
         mc:Ignorable="d"
         Title="Currency Converter" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" >
     
-    <TabControl x:Name="tabMain" TabStripPlacement="Top">
-        <TabItem x:Name="tabConverter" Header=" Currency Converter ">
+    <TabControl TabStripPlacement="Top">
+        <TabItem Header=" Currency Converter ">
             <ContentControl x:Name="ConverterContent"/>
         </TabItem>
-        <TabItem x:Name="tabControl" Header=" Currency Control ">
+        <TabItem Header=" Currency Control ">
             <ContentControl x:Name="ControlContent"/>
         </TabItem>
     </TabControl>

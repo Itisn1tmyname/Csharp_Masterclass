@@ -24,9 +24,7 @@
         </Grid.RowDefinitions>
 
         <ScrollViewer Grid.Row="1" Grid.Column="1" VerticalScrollBarVisibility="Auto">
-            <StackPanel x:Name="TodoList" Background="CornflowerBlue">
-                
-            </StackPanel>
+            <StackPanel x:Name="TodoList" Background="CornflowerBlue"/>
         </ScrollViewer>
         
         <TextBox Grid.Row="3" Grid.Column="1"

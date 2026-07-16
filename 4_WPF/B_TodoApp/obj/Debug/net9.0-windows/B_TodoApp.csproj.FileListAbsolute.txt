@@ -18,3 +18,4 @@ E:\Programme\Csharp_Masterclass\4_WPF\B_TodoApp\obj\Debug\net9.0-windows\refint\
 E:\Programme\Csharp_Masterclass\4_WPF\B_TodoApp\obj\Debug\net9.0-windows\B_TodoApp.pdb
 E:\Programme\Csharp_Masterclass\4_WPF\B_TodoApp\obj\Debug\net9.0-windows\B_TodoApp.genruntimeconfig.cache
 E:\Programme\Csharp_Masterclass\4_WPF\B_TodoApp\obj\Debug\net9.0-windows\ref\B_TodoApp.dll
+E:\Programme\Csharp_Masterclass\4_WPF\B_TodoApp\obj\Debug\net9.0-windows\B_TodoApp.sourcelink.json

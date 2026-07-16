@@ -17,4 +17,11 @@
       <Folder Include="Images\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="Images\delete.png" />
+      <Resource Include="Images\delete.png" />
+      <None Remove="Images\editing.png" />
+      <Resource Include="Images\editing.png" />
+    </ItemGroup>
+
 </Project>

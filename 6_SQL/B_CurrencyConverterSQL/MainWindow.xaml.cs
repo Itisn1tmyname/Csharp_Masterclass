@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System.Configuration;
+using System.Data;
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -20,15 +21,14 @@ namespace B_CurrencyConverterSQL;
 /// </summary>
 public partial class MainWindow : Window
 {
-   
-    public SqlConnection SQLconnection { get; }
+
+    public static SqlConnection SQLconnection { get; } = new(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
     
     public MainWindow()
     {
         InitializeComponent();
-        SQLconnection =
-            new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Programme\Csharp_Masterclass\6_SQL\B_CurrencyConverterSQL\Data\CurrencyConverterDB.mdf;Integrated Security=True");
         ControlContent.Content = new ControlWindow();
         ConverterContent.Content = new ConverterWindow();
     }
+    
 }

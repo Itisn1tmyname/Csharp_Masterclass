@@ -4,12 +4,14 @@ using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using Microsoft.Data.SqlClient;
 
 namespace B_CurrencyConverterSQL;
 
 public partial class ConverterWindow : UserControl
 {
     private byte _inputValidationCounter = (byte)0;
+    private readonly SqlConnection _sqlConnection = MainWindow.SQLconnection;
     
     public ConverterWindow()
     {
@@ -17,30 +19,40 @@ public partial class ConverterWindow : UserControl
         BindData();
     }
     
-    private void BindData()
+    public void BindData()
     {
-        DataTable dataTableCurrency = new  DataTable();
-        dataTableCurrency.Columns.Add("Text", typeof(string));
-        dataTableCurrency.Columns.Add("Value", typeof(double));
+        try
+        {
+            SqlDataAdapter adapter = new("select * from Currency_Control", _sqlConnection);
 
-        dataTableCurrency.Rows.Add("    --SELECT--", 0);
-        dataTableCurrency.Rows.Add("EUR (€)", 1);
-        dataTableCurrency.Rows.Add("USD ($)", 1.143);
-        dataTableCurrency.Rows.Add("JPY (¥)", 185.02);
-        dataTableCurrency.Rows.Add("CZK (Kč)", 24.259);
-        dataTableCurrency.Rows.Add("GBP (£)", 0.85155);
-        dataTableCurrency.Rows.Add("PLN (zł)", 4.3475);
-        dataTableCurrency.Rows.Add("CNY (¥uan)", 7.7433);
+            using (adapter)
+            {
+                DataTable dataTableCurrency = new  DataTable();
+                adapter.Fill(dataTableCurrency);
+
+                DataRow newRow = dataTableCurrency.NewRow();
+                newRow["Id"] = 0;
+                newRow["Name"] = "    --SELECT--";
+                newRow["Value"] = 0;
+                
+                dataTableCurrency.Rows.InsertAt(newRow, 0);
+            
+                FromComboBox.ItemsSource = dataTableCurrency.DefaultView;
+                FromComboBox.DisplayMemberPath = "Name";
+                FromComboBox.SelectedValuePath = "Value";
+                FromComboBox.SelectedIndex = 1;
         
-        FromComboBox.ItemsSource = dataTableCurrency.DefaultView;
-        FromComboBox.DisplayMemberPath = "Text";
-        FromComboBox.SelectedValuePath = "Value";
-        FromComboBox.SelectedIndex = 1;
-        
-        ToComboBox.ItemsSource = dataTableCurrency.DefaultView;
-        ToComboBox.DisplayMemberPath = "Text";
-        ToComboBox.SelectedValuePath = "Value";
-        ToComboBox.SelectedIndex = 2;
+                ToComboBox.ItemsSource = dataTableCurrency.DefaultView;
+                ToComboBox.DisplayMemberPath = "Name";
+                ToComboBox.SelectedValuePath = "Value";
+                ToComboBox.SelectedIndex = 2;
+            
+            }
+        }
+        catch (Exception e)
+        {
+            MessageBox.Show(e.Message, "Error in ConverterWindow.BindData()", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
     }
 
     private void CurrencyTxtBx_OnTextInput(object sender, KeyEventArgs e)
@@ -66,7 +78,6 @@ public partial class ConverterWindow : UserControl
         }
         else if (e.Key.Equals(Key.Back))
         {
-            Console.WriteLine(_inputValidationCounter);
             if (_inputValidationCounter > 2)
                 _inputValidationCounter = 1;
             else if (_inputValidationCounter > 0)
@@ -136,5 +147,10 @@ public partial class ConverterWindow : UserControl
                              double.Parse(FromComboBox.SelectedValue.ToString()!);
             CurrencyResultLabel.Content = $"{inputValue:N2} {FromComboBox.Text} = {convertedValue:N2} {ToComboBox.Text}";
         }
+    }
+
+    private void ConverterWindow_OnIsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+    {
+        BindData();
     }
 }

@@ -1,7 +1,17 @@
-﻿create table dbo.Currency_Control
+﻿drop table dbo.Currency_Control
+create table dbo.Currency_Control
 (
     [Id]     int identity primary key,
     [Name]   nvarchar(50),
-    [Amount] float
+    [Value] double precision
 )
+
+insert into Currency_Control values ('EUR (€)', 1)
+insert into Currency_Control values ('USD ($)', 1.143)
+insert into Currency_Control values ('JPY (¥)', 185.02)
+insert into Currency_Control values ('CZK (Kč)', 24.259)
+insert into Currency_Control values ('GBP (£)', 0.85155)
+insert into Currency_Control values ('PLN (zł)', 4.3475)
+insert into Currency_Control values ('CNY (¥uan)', 7.7433)
+
 go
