@@ -21,5 +21,13 @@
       <jdbc-url>Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Programme\Csharp_Masterclass\6_SQL\B_CurrencyConverterSQL\Data\CurrencyConverterDB.mdf;Integrated Security=True</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="CurrencyCopiedDB" uuid="d7f4aaa6-9ce4-4ed3-889c-095b520478b9">
+      <driver-ref>sqlserver.jb</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>com.jetbrains.jdbc.sqlserver.SqlServerDriver</jdbc-driver>
+      <jdbc-url>Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Programme\Csharp_Masterclass\6_SQL\C_CurrencyCopied\Data\CurrencyConverterDB.mdf;Integrated Security=True</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

@@ -105,6 +105,7 @@ public partial class ControlWindow : UserControl
             SqlDataAdapter sda = new SqlDataAdapter("select * from Currency_Control", _sqlConnection);
             sda.Fill(dt);
             dataGridCurrency.ItemsSource = dt.DefaultView;
+            dataGridCurrency.SelectedValuePath = "Id";
         }
         catch (Exception e)
         {
@@ -149,47 +150,55 @@ public partial class ControlWindow : UserControl
 
     private void DataGridCurrency_OnSelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
     {
-        try
-        {
-            DataGrid grid = (DataGrid)sender;
-            DataRowView? selectedRow = (grid.SelectedItem as DataRowView);
-
-            // if (selectedRow == null || grid.Items.Count == 0 || grid.SelectedCells.Count == 0)
-            //     return;
-            //
-            
-            
-            _id = Int32.Parse(selectedRow["Id"].ToString()!);
-            Console.WriteLine(grid.SelectedCells[0].Column.ToString());
-            if (grid.SelectedCells[0].Column == Edit)
-            {
-                textBoxAmount.Text = selectedRow["Value"].ToString()!;
-                textBoxName.Text = selectedRow["Name"].ToString()!;
-                SaveButton.Content = "Update";
-            }
-            else if (grid.SelectedCells[0].Column == Delete)
-            {
-                if (MessageBox.Show("Are you sure you want to delete this entry?", "Attention", MessageBoxButton.YesNo,
-                        MessageBoxImage.Question) == MessageBoxResult.Yes)
-                {
-                    _sqlConnection.Open();
-                    string query = $"delete from Currency_Control where Id = {_id}";
-                    SqlCommand command = new SqlCommand(query, _sqlConnection);
-                    command.ExecuteNonQuery();
-                    _sqlConnection.Close();
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show(ex.Message, "Error in ControlWindow.DataGridCurrency_OnSelectedCellsChanged()",
-                MessageBoxButton.OK, MessageBoxImage.Error);
-        }
-        finally
-        {
-            _sqlConnection.Close();
-        }
+        DataGrid dg = (sender as DataGrid)!;
+        Console.WriteLine(dg.SelectedValue ?? "null");
+        Console.WriteLine(dg.CurrentCell.ToString());
+        Console.WriteLine(dg.CurrentColumn.Header as string);
+        DataRowView dr = dg.CurrentItem as DataRowView;
+        Console.WriteLine(dr.Row.ToString());
 
 
+
+        // if (dataGridCurrency.SelectedItem == null) return;
+        // try
+        // {
+        //     DataRowView selectedRow = (dataGridCurrency.SelectedItem as DataRowView);
+        //
+        //     // if (selectedRow == null || grid.Items.Count == 0 || grid.SelectedCells.Count == 0)
+        //     //     return;
+        //     //
+        //     
+        //     
+        //     _id = Int32.Parse(selectedRow["Id"].ToString()!);
+        //     Console.WriteLine(dataGridCurrency.SelectedCells[0].Column.ToString());
+        //     if (dataGridCurrency.SelectedCells[0].Column == Edit)
+        //     {
+        //         textBoxAmount.Text = selectedRow["Value"].ToString()!;
+        //         textBoxName.Text = selectedRow["Name"].ToString()!;
+        //         SaveButton.Content = "Update";
+        //     }
+        //     else if (dataGridCurrency.SelectedCells[0].Column == Delete)
+        //     {
+        //         if (MessageBox.Show("Are you sure you want to delete this entry?", "Attention", MessageBoxButton.YesNo,
+        //                 MessageBoxImage.Question) == MessageBoxResult.Yes)
+        //         {
+        //             _sqlConnection.Open();
+        //             string query = $"delete from Currency_Control where Id = {_id}";
+        //             SqlCommand command = new SqlCommand(query, _sqlConnection);
+        //             command.ExecuteNonQuery();
+        //             _sqlConnection.Close();
+        //         }
+        //     }
+        // }
+        // catch (Exception ex)
+        // {
+        //     MessageBox.Show(ex.Message, "Error in ControlWindow.DataGridCurrency_OnSelectedCellsChanged()",
+        //         MessageBoxButton.OK, MessageBoxImage.Error);
+        //     Console.WriteLine(ex.ToString());
+        // }
+        // finally
+        // {
+        //     _sqlConnection.Close();
+        // }
     }
 }
