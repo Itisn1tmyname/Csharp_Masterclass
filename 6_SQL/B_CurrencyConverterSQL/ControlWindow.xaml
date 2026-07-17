@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:local="clr-namespace:B_CurrencyConverterSQL"
         mc:Ignorable="d"
         d:DesignHeight="475" d:DesignWidth="1000">
     
@@ -39,13 +38,13 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
-            <Label Grid.Row="0" Grid.Column="1" Content="Enter Amount : " FontSize="20" Foreground="White"/>
-            <Label Grid.Row="0" Grid.Column="3" Content="Currency Name : " FontSize="20" Foreground="White"/>
-            <TextBox Grid.Row="1" Grid.Column="1" x:Name="textBoxAmount" FontSize="20" Margin="4"
-                     PreviewTextInput="TextBoxAmount_OnPreviewTextInput" PreviewKeyDown="TextBoxAmount_OnPreviewKeyDown"/>
-            <TextBox Grid.Row="1" Grid.Column="3" x:Name="textBoxName" FontSize="20" Margin="4"
+            <Label Grid.Row="0" Grid.Column="1" Content="Currency Name : " FontSize="20" Foreground="White"/>
+            <Label Grid.Row="0" Grid.Column="3" Content="Enter Amount : " FontSize="20" Foreground="White"/>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="TextBoxName" FontSize="20" Margin="4" Width="225"
                      PreviewTextInput="TextBoxName_OnPreviewTextInput" PreviewKeyDown="TextBoxName_OnPreviewKeyDown"/>
-        </Grid>
+            <TextBox Grid.Row="1" Grid.Column="3" x:Name="TextBoxAmount" FontSize="20" Margin="4" Width="225"
+                     PreviewTextInput="TextBoxAmount_OnPreviewTextInput" PreviewKeyDown="TextBoxAmount_OnPreviewKeyDown"/>
+            </Grid>
         
         <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button Content="Save" Click="SaveButton_OnClick" Style="{StaticResource ButtonRound}" x:Name="SaveButton" />
@@ -56,58 +55,31 @@
             
         </StackPanel>
         
-        <!-- <DataGrid Grid.Row="3" Grid.Column="1" x:Name="dataGridCurrency" AutoGenerateColumns="False" Margin="10" -->
-        <!--           Background="Transparent" CanUserAddRows="False" SelectionUnit="Cell" VerticalScrollBarVisibility="Auto" -->
-        <!--           SelectedCellsChanged="DataGridCurrency_OnSelectedCellsChanged" HorizontalAlignment="Center"> -->
-        <!--     <DataGrid.Columns> -->
-        <!--         <DataGridTextColumn x:Name="Id" Visibility="Hidden" Binding="{Binding Path=Id}"/> -->
-        <!--         <DataGridTextColumn x:Name="Name" Header="Currency Name" Width="200" IsReadOnly="True" Binding="{Binding Path=Name}" FontSize="18"/> -->
-        <!--         <DataGridTextColumn x:Name="Value" Header="Amount" Width="200" IsReadOnly="True" Binding="{Binding Path=Value}" FontSize="18"/> -->
-        <!--         -->
-        <!--         <DataGridTemplateColumn IsReadOnly="True"> -->
-        <!--             <DataGridTemplateColumn.CellTemplate> -->
-        <!--                 <DataTemplate> -->
-        <!--                     <Image Source="/Images/delete.png" ToolTip="Delete" Width="25" Height="25" Margin="0 0 9 0" x:Name="Delete"/> -->
-        <!--                 </DataTemplate> -->
-        <!--             </DataGridTemplateColumn.CellTemplate> -->
-        <!--         </DataGridTemplateColumn> -->
-        <!--         -->
-        <!--         <DataGridTemplateColumn IsReadOnly="True"> -->
-        <!--             <DataGridTemplateColumn.CellTemplate> -->
-        <!--                 <DataTemplate> -->
-        <!--                     <Image Source="/Images/editing.png" ToolTip="Edit" Width="25" Height="25" Margin="5" x:Name="Edit"/> -->
-        <!--                 </DataTemplate> -->
-        <!--             </DataGridTemplateColumn.CellTemplate> -->
-        <!--         </DataGridTemplateColumn> -->
-        <!--     </DataGrid.Columns> -->
-        <!--      -->
-        <!-- </DataGrid> -->
-        
-        <DataGrid Grid.Row="3" Grid.Column="1" x:Name="dataGridCurrency" AutoGenerateColumns="False" Margin="10"
+        <DataGrid Grid.Row="3" Grid.Column="1" x:Name="DataGridCurrency" AutoGenerateColumns="False" Margin="10"
                   Background="Transparent" CanUserAddRows="False" SelectionUnit="Cell" VerticalScrollBarVisibility="Auto"
                   SelectedCellsChanged="DataGridCurrency_OnSelectedCellsChanged" HorizontalAlignment="Center">
             <DataGrid.Columns>
-                <DataGridTextColumn x:Name="Id" Visibility="Hidden" Binding="{Binding Path=Id}"/>
-                <DataGridTextColumn x:Name="Name" Header="Currency Name" Width="200" IsReadOnly="True" Binding="{Binding Path=Name}" FontSize="18"/>
-                <DataGridTextColumn x:Name="Value" Header="Amount" Width="200" IsReadOnly="True" Binding="{Binding Path=Value}" FontSize="18"/>
-               
+                <DataGridTextColumn Visibility="Hidden" Binding="{Binding Path=Id}"/>
+                <DataGridTextColumn Header="Currency Name" Width="200" IsReadOnly="True" Binding="{Binding Path=Name}" FontSize="18"/>
+                <DataGridTextColumn Header="Amount" Width="200" IsReadOnly="True" Binding="{Binding Path=Value}" FontSize="18"/>
+        
                 <DataGridTemplateColumn IsReadOnly="True" x:Name="Delete">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Image Source="/Images/delete.png" ToolTip="Delete" Width="25" Height="25" Margin="0 0 9 0"/>
+                            <Image Source="/Images/delete.png" ToolTip="Delete" Width="25" Height="25" Margin="0 0 9 0" x:Name="Delete"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-               
+        
                 <DataGridTemplateColumn IsReadOnly="True" x:Name="Edit">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Image Source="/Images/editing.png" ToolTip="Edit" Width="25" Height="25" Margin="5"/>
+                            <Image Source="/Images/editing.png" ToolTip="Edit" Width="25" Height="25" Margin="5" x:Name="Edit"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
-            
+        
         </DataGrid>
         
     </Grid>

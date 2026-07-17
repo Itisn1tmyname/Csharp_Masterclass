@@ -2,15 +2,14 @@
 using System.Globalization;
 using System.Text.RegularExpressions;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
 using Microsoft.Data.SqlClient;
 
 namespace B_CurrencyConverterSQL;
 
-public partial class ConverterWindow : UserControl
+public partial class ConverterWindow
 {
-    private byte _inputValidationCounter = (byte)0;
+    private byte _inputValidationCounter;
     private readonly SqlConnection _sqlConnection = MainWindow.SQLconnection;
     
     public ConverterWindow()
@@ -19,7 +18,7 @@ public partial class ConverterWindow : UserControl
         BindData();
     }
     
-    public void BindData()
+    private void BindData()
     {
         try
         {
@@ -57,7 +56,7 @@ public partial class ConverterWindow : UserControl
 
     private void CurrencyTxtBx_OnTextInput(object sender, KeyEventArgs e)
     {
-        //Checking input with regular Expressions. Currently accepts spacebar for some godforsaken reason.
+        //Checking input with regular Expressions. Input of empty space needs to be filtered separately. 
         Regex regex = new Regex("[0-9.]+");
         if (e.Key.Equals(Key.Enter))
         {

@@ -22,10 +22,15 @@ namespace B_CurrencyConverterSQL;
 public partial class MainWindow : Window
 {
 
-    public static SqlConnection SQLconnection { get; } = new(ConfigurationManager.ConnectionStrings["ConnectionLocal"].ConnectionString);
+    public static SqlConnection SQLconnection { get; } 
+        = new(ConfigurationManager.ConnectionStrings["ConnectionLocal"].ConnectionString);
     
     public MainWindow()
     {
+        string path = AppDomain.CurrentDomain.BaseDirectory;
+        path = path.Substring(0, path.Length - 25);
+        AppDomain.CurrentDomain.SetData("DataDirectory", path);
+        
         InitializeComponent();
         ControlContent.Content = new ControlWindow();
         ConverterContent.Content = new ConverterWindow();

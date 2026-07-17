@@ -119,7 +119,6 @@ C:\Users\mgeda\OneDrive\Desktop\Programme\Csharp_Masterclass\6_SQL\B_CurrencyCon
 C:\Users\mgeda\OneDrive\Desktop\Programme\Csharp_Masterclass\6_SQL\B_CurrencyConverterSQL\obj\Debug\net9.0-windows\MainWindow.g.cs
 C:\Users\mgeda\OneDrive\Desktop\Programme\Csharp_Masterclass\6_SQL\B_CurrencyConverterSQL\obj\Debug\net9.0-windows\App.g.cs
 C:\Users\mgeda\OneDrive\Desktop\Programme\Csharp_Masterclass\6_SQL\B_CurrencyConverterSQL\obj\Debug\net9.0-windows\B_CurrencyConverterSQL_MarkupCompile.cache
-C:\Users\mgeda\OneDrive\Desktop\Programme\Csharp_Masterclass\6_SQL\B_CurrencyConverterSQL\obj\Debug\net9.0-windows\B_CurrencyConverterSQL_MarkupCompile.lref
 C:\Users\mgeda\OneDrive\Desktop\Programme\Csharp_Masterclass\6_SQL\B_CurrencyConverterSQL\obj\Debug\net9.0-windows\App.baml
 C:\Users\mgeda\OneDrive\Desktop\Programme\Csharp_Masterclass\6_SQL\B_CurrencyConverterSQL\obj\Debug\net9.0-windows\ControlWindow.baml
 C:\Users\mgeda\OneDrive\Desktop\Programme\Csharp_Masterclass\6_SQL\B_CurrencyConverterSQL\obj\Debug\net9.0-windows\ConverterWindow.baml

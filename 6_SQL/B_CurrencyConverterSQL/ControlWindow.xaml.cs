@@ -11,7 +11,7 @@ public partial class ControlWindow
 {
     private readonly SqlConnection _sqlConnection = MainWindow.SQLconnection;
     private int _id;
-    private bool _hasDecimal = false;
+    private bool _hasDecimal;
     
     public ControlWindow()
     {
@@ -26,13 +26,13 @@ public partial class ControlWindow
     
     private void Save()
     {
-        if (string.IsNullOrEmpty(textBoxAmount.Text.Trim()))
+        if (string.IsNullOrEmpty(TextBoxAmount.Text.Trim()))
         {
             MessageBox.Show("Please enter the current exchange course.", "Information", MessageBoxButton.OK,
                 MessageBoxImage.Information);
             return;
         }
-        if(string.IsNullOrEmpty(textBoxName.Text.Trim()))
+        if(string.IsNullOrEmpty(TextBoxName.Text.Trim()))
         {
             MessageBox.Show("Please enter a name for the currency!", "Information", MessageBoxButton.OK,
                 MessageBoxImage.Information);
@@ -48,7 +48,7 @@ public partial class ControlWindow
                         MessageBoxImage.Question) == MessageBoxResult.Yes)
                 {
                     string query =
-                        $"update Currency_Control set Value = {textBoxAmount.Text}, Name = '{textBoxName.Text}'" +
+                        $"update Currency_Control set Value = {TextBoxAmount.Text}, Name = '{TextBoxName.Text}'" +
                         $"where Id = {_id}";
                     SqlCommand command = new SqlCommand(query, _sqlConnection);
                     command.ExecuteNonQuery();
@@ -61,7 +61,7 @@ public partial class ControlWindow
                 if (MessageBox.Show("Are you sure you want to save?", "Attention", MessageBoxButton.YesNo,
                         MessageBoxImage.Question) == MessageBoxResult.Yes)
                 {
-                    string query = $"insert into Currency_Control(Name, Value) values('{textBoxName.Text}', {textBoxAmount.Text})";
+                    string query = $"insert into Currency_Control(Name, Value) values('{TextBoxName.Text}', {TextBoxAmount.Text})";
                     SqlCommand command = new SqlCommand(query, _sqlConnection);
                     command.ExecuteNonQuery();
                     MessageBox.Show("Data saved successfully!", "Information", MessageBoxButton.OK,
@@ -85,12 +85,12 @@ public partial class ControlWindow
     {
         try
         {
-            textBoxName.Clear();
-            textBoxAmount.Clear();
+            TextBoxName.Clear();
+            TextBoxAmount.Clear();
             SaveButton.Content = "Save";
             GetData();
             _id = 0;
-            textBoxAmount.Focus();
+            TextBoxAmount.Focus();
         }
         catch (Exception e)
         {
@@ -106,8 +106,8 @@ public partial class ControlWindow
             DataTable dt = new DataTable();
             SqlDataAdapter sda = new SqlDataAdapter("select * from Currency_Control", _sqlConnection);
             sda.Fill(dt);
-            dataGridCurrency.ItemsSource = dt.DefaultView;
-            dataGridCurrency.SelectedValuePath = "Id";
+            DataGridCurrency.ItemsSource = dt.DefaultView;
+            DataGridCurrency.SelectedValuePath = "Id";
         }
         catch (Exception e)
         {
@@ -136,17 +136,17 @@ public partial class ControlWindow
         else if (e.Key == Key.Back)
         {
             Regex regex = new Regex(@"\d+\.");
-            if (regex.IsMatch(textBoxAmount.Text))
+            if (regex.IsMatch(TextBoxAmount.Text))
                 _hasDecimal = false;
         }
         else if (e.Key == Key.Enter)
-            textBoxName.Focus();
+            TextBoxName.Focus();
     }
 
     private void TextBoxAmount_OnPreviewTextInput(object sender, TextCompositionEventArgs e)
     {
         Regex regex = new Regex(@"[\d.]");
-        e.Handled = !regex.IsMatch(e.Text);
+        e.Handled = !regex.IsMatch(e.Text) || TextBoxAmount.Text.Length == 15;
     }
     
     private void TextBoxName_OnPreviewKeyDown(object sender, KeyEventArgs e)
@@ -160,7 +160,7 @@ public partial class ControlWindow
     private void TextBoxName_OnPreviewTextInput(object sender, TextCompositionEventArgs e)
     {
         Regex regex = new Regex(@"[\w.-_]");
-        e.Handled = !regex.IsMatch(e.Text);
+        e.Handled = !regex.IsMatch(e.Text) || TextBoxName.Text.Length == 15;
     }
 
     private void DataGridCurrency_OnSelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
@@ -176,14 +176,13 @@ public partial class ControlWindow
             
             
             _id = Int32.Parse(selectedRow["Id"].ToString()!);
-            Console.WriteLine(dataGridCurrency.SelectedCells[0].Column.ToString());
-            if (dataGridCurrency.SelectedCells[0].Column == Edit)
+            if (DataGridCurrency.SelectedCells[0].Column == Edit)
             {
-                textBoxAmount.Text = selectedRow["Value"].ToString()!;
-                textBoxName.Text = selectedRow["Name"].ToString()!;
+                TextBoxAmount.Text = selectedRow["Value"].ToString()!.Replace(',', '.');
+                TextBoxName.Text = selectedRow["Name"].ToString()!;
                 SaveButton.Content = "Update";
             }
-            else if (dataGridCurrency.SelectedCells[0].Column == Delete)
+            else if (DataGridCurrency.SelectedCells[0].Column == Delete)
             {
                 if (MessageBox.Show("Are you sure you want to delete this entry?", "Attention", MessageBoxButton.YesNo,
                         MessageBoxImage.Question) == MessageBoxResult.Yes)
@@ -193,6 +192,7 @@ public partial class ControlWindow
                     SqlCommand command = new SqlCommand(query, _sqlConnection);
                     command.ExecuteNonQuery();
                     _sqlConnection.Close();
+                    GetData();
                 }
             }
         }
@@ -200,7 +200,6 @@ public partial class ControlWindow
         {
             MessageBox.Show(ex.Message, "Error in ControlWindow.DataGridCurrency_OnSelectedCellsChanged()",
                 MessageBoxButton.OK, MessageBoxImage.Error);
-            Console.WriteLine(ex.ToString());
         }
         finally
         {
