@@ -1,37 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Programme\\Csharp_Masterclass\\6_SQL\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A6E6000E-9749-444C-8C2D-941DE47E650C}|B_CurrencyConverterSQL\\B_CurrencyConverterSQL.csproj|e:\\programme\\csharp_masterclass\\6_sql\\b_currencyconvertersql\\b_currencyconvertersql.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A6E6000E-9749-444C-8C2D-941DE47E650C}|B_CurrencyConverterSQL\\B_CurrencyConverterSQL.csproj|solutionrelative:b_currencyconvertersql\\b_currencyconvertersql.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\6_SQL\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "B_CurrencyConverterSQL",
-              "DocumentMoniker": "E:\\Programme\\Csharp_Masterclass\\6_SQL\\B_CurrencyConverterSQL\\B_CurrencyConverterSQL.csproj",
-              "RelativeDocumentMoniker": "B_CurrencyConverterSQL\\B_CurrencyConverterSQL.csproj",
-              "ToolTip": "E:\\Programme\\Csharp_Masterclass\\6_SQL\\B_CurrencyConverterSQL\\B_CurrencyConverterSQL.csproj",
-              "RelativeToolTip": "B_CurrencyConverterSQL\\B_CurrencyConverterSQL.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-15T13:27:21.277Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

@@ -22,7 +22,7 @@ namespace B_CurrencyConverterSQL;
 public partial class MainWindow : Window
 {
 
-    public static SqlConnection SQLconnection { get; } = new(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+    public static SqlConnection SQLconnection { get; } = new(ConfigurationManager.ConnectionStrings["ConnectionLocal"].ConnectionString);
     
     public MainWindow()
     {

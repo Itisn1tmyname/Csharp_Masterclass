@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -6,10 +7,11 @@ using Microsoft.Data.SqlClient;
 
 namespace B_CurrencyConverterSQL;
 
-public partial class ControlWindow : UserControl
+public partial class ControlWindow
 {
     private readonly SqlConnection _sqlConnection = MainWindow.SQLconnection;
     private int _id;
+    private bool _hasDecimal = false;
     
     public ControlWindow()
     {
@@ -126,13 +128,25 @@ public partial class ControlWindow : UserControl
     {
         if (e.Key == Key.Space)
             e.Handled = true;
+        else if (e.Key == Key.OemPeriod)
+        {
+            if (_hasDecimal) e.Handled = true;
+            else _hasDecimal = true;
+        }
+        else if (e.Key == Key.Back)
+        {
+            Regex regex = new Regex(@"\d+\.");
+            if (regex.IsMatch(textBoxAmount.Text))
+                _hasDecimal = false;
+        }
         else if (e.Key == Key.Enter)
             textBoxName.Focus();
     }
 
     private void TextBoxAmount_OnPreviewTextInput(object sender, TextCompositionEventArgs e)
     {
-        // MessageBox.Show("Not Implemented"); TODO
+        Regex regex = new Regex(@"[\d.]");
+        e.Handled = !regex.IsMatch(e.Text);
     }
     
     private void TextBoxName_OnPreviewKeyDown(object sender, KeyEventArgs e)
@@ -145,60 +159,52 @@ public partial class ControlWindow : UserControl
 
     private void TextBoxName_OnPreviewTextInput(object sender, TextCompositionEventArgs e)
     {
-        // MessageBox.Show("Not Implemented"); TODO
+        Regex regex = new Regex(@"[\w.-_]");
+        e.Handled = !regex.IsMatch(e.Text);
     }
 
     private void DataGridCurrency_OnSelectedCellsChanged(object sender, SelectedCellsChangedEventArgs e)
     {
-        DataGrid dg = (sender as DataGrid)!;
-        Console.WriteLine(dg.SelectedValue ?? "null");
-        Console.WriteLine(dg.CurrentCell.ToString());
-        Console.WriteLine(dg.CurrentColumn.Header as string);
-        DataRowView dr = dg.CurrentItem as DataRowView;
-        Console.WriteLine(dr.Row.ToString());
-
-
-
-        // if (dataGridCurrency.SelectedItem == null) return;
-        // try
-        // {
-        //     DataRowView selectedRow = (dataGridCurrency.SelectedItem as DataRowView);
-        //
-        //     // if (selectedRow == null || grid.Items.Count == 0 || grid.SelectedCells.Count == 0)
-        //     //     return;
-        //     //
-        //     
-        //     
-        //     _id = Int32.Parse(selectedRow["Id"].ToString()!);
-        //     Console.WriteLine(dataGridCurrency.SelectedCells[0].Column.ToString());
-        //     if (dataGridCurrency.SelectedCells[0].Column == Edit)
-        //     {
-        //         textBoxAmount.Text = selectedRow["Value"].ToString()!;
-        //         textBoxName.Text = selectedRow["Name"].ToString()!;
-        //         SaveButton.Content = "Update";
-        //     }
-        //     else if (dataGridCurrency.SelectedCells[0].Column == Delete)
-        //     {
-        //         if (MessageBox.Show("Are you sure you want to delete this entry?", "Attention", MessageBoxButton.YesNo,
-        //                 MessageBoxImage.Question) == MessageBoxResult.Yes)
-        //         {
-        //             _sqlConnection.Open();
-        //             string query = $"delete from Currency_Control where Id = {_id}";
-        //             SqlCommand command = new SqlCommand(query, _sqlConnection);
-        //             command.ExecuteNonQuery();
-        //             _sqlConnection.Close();
-        //         }
-        //     }
-        // }
-        // catch (Exception ex)
-        // {
-        //     MessageBox.Show(ex.Message, "Error in ControlWindow.DataGridCurrency_OnSelectedCellsChanged()",
-        //         MessageBoxButton.OK, MessageBoxImage.Error);
-        //     Console.WriteLine(ex.ToString());
-        // }
-        // finally
-        // {
-        //     _sqlConnection.Close();
-        // }
+        try
+        {
+            DataGrid grid = (sender as DataGrid)!;
+            DataRowView? selectedRow = grid.CurrentItem as DataRowView;
+        
+            if (selectedRow == null || grid.Items.Count == 0 || grid.SelectedCells.Count == 0)
+                return;
+            
+            
+            
+            _id = Int32.Parse(selectedRow["Id"].ToString()!);
+            Console.WriteLine(dataGridCurrency.SelectedCells[0].Column.ToString());
+            if (dataGridCurrency.SelectedCells[0].Column == Edit)
+            {
+                textBoxAmount.Text = selectedRow["Value"].ToString()!;
+                textBoxName.Text = selectedRow["Name"].ToString()!;
+                SaveButton.Content = "Update";
+            }
+            else if (dataGridCurrency.SelectedCells[0].Column == Delete)
+            {
+                if (MessageBox.Show("Are you sure you want to delete this entry?", "Attention", MessageBoxButton.YesNo,
+                        MessageBoxImage.Question) == MessageBoxResult.Yes)
+                {
+                    _sqlConnection.Open();
+                    string query = $"delete from Currency_Control where Id = {_id}";
+                    SqlCommand command = new SqlCommand(query, _sqlConnection);
+                    command.ExecuteNonQuery();
+                    _sqlConnection.Close();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show(ex.Message, "Error in ControlWindow.DataGridCurrency_OnSelectedCellsChanged()",
+                MessageBoxButton.OK, MessageBoxImage.Error);
+            Console.WriteLine(ex.ToString());
+        }
+        finally
+        {
+            _sqlConnection.Close();
+        }
     }
 }
