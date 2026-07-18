@@ -1,0 +1,15 @@
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/A_Console/bin/Debug/net9.0/A_Console
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/A_Console/bin/Debug/net9.0/A_Console.deps.json
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/A_Console/bin/Debug/net9.0/A_Console.runtimeconfig.json
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/A_Console/bin/Debug/net9.0/A_Console.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/A_Console/bin/Debug/net9.0/A_Console.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/A_Console/obj/Debug/net9.0/A_Console.GeneratedMSBuildEditorConfig.editorconfig
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/A_Console/obj/Debug/net9.0/A_Console.AssemblyInfoInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/A_Console/obj/Debug/net9.0/A_Console.AssemblyInfo.cs
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/A_Console/obj/Debug/net9.0/A_Console.csproj.CoreCompileInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/A_Console/obj/Debug/net9.0/A_Console.sourcelink.json
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/A_Console/obj/Debug/net9.0/A_Console.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/A_Console/obj/Debug/net9.0/refint/A_Console.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/A_Console/obj/Debug/net9.0/A_Console.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/A_Console/obj/Debug/net9.0/A_Console.genruntimeconfig.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/A_Console/obj/Debug/net9.0/ref/A_Console.dll
