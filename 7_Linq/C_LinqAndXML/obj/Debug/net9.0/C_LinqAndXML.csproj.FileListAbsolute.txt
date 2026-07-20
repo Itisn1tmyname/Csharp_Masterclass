@@ -1,0 +1,15 @@
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/C_LinqAndXML/bin/Debug/net9.0/C_LinqAndXML
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/C_LinqAndXML/bin/Debug/net9.0/C_LinqAndXML.deps.json
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/C_LinqAndXML/bin/Debug/net9.0/C_LinqAndXML.runtimeconfig.json
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/C_LinqAndXML/bin/Debug/net9.0/C_LinqAndXML.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/C_LinqAndXML/bin/Debug/net9.0/C_LinqAndXML.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/C_LinqAndXML/obj/Debug/net9.0/C_LinqAndXML.GeneratedMSBuildEditorConfig.editorconfig
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/C_LinqAndXML/obj/Debug/net9.0/C_LinqAndXML.AssemblyInfoInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/C_LinqAndXML/obj/Debug/net9.0/C_LinqAndXML.AssemblyInfo.cs
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/C_LinqAndXML/obj/Debug/net9.0/C_LinqAndXML.csproj.CoreCompileInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/C_LinqAndXML/obj/Debug/net9.0/C_LinqAndXML.sourcelink.json
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/C_LinqAndXML/obj/Debug/net9.0/C_LinqAndXML.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/C_LinqAndXML/obj/Debug/net9.0/refint/C_LinqAndXML.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/C_LinqAndXML/obj/Debug/net9.0/C_LinqAndXML.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/C_LinqAndXML/obj/Debug/net9.0/C_LinqAndXML.genruntimeconfig.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/C_LinqAndXML/obj/Debug/net9.0/ref/C_LinqAndXML.dll

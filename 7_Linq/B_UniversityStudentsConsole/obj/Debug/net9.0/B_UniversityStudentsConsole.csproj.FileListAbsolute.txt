@@ -1,0 +1,15 @@
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/B_UniversityStudentsConsole/bin/Debug/net9.0/B_UniversityStudentsConsole
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/B_UniversityStudentsConsole/bin/Debug/net9.0/B_UniversityStudentsConsole.deps.json
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/B_UniversityStudentsConsole/bin/Debug/net9.0/B_UniversityStudentsConsole.runtimeconfig.json
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/B_UniversityStudentsConsole/bin/Debug/net9.0/B_UniversityStudentsConsole.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/B_UniversityStudentsConsole/bin/Debug/net9.0/B_UniversityStudentsConsole.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/B_UniversityStudentsConsole/obj/Debug/net9.0/B_UniversityStudentsConsole.GeneratedMSBuildEditorConfig.editorconfig
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/B_UniversityStudentsConsole/obj/Debug/net9.0/B_UniversityStudentsConsole.AssemblyInfoInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/B_UniversityStudentsConsole/obj/Debug/net9.0/B_UniversityStudentsConsole.AssemblyInfo.cs
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/B_UniversityStudentsConsole/obj/Debug/net9.0/B_UniversityStudentsConsole.csproj.CoreCompileInputs.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/B_UniversityStudentsConsole/obj/Debug/net9.0/B_UniversityStudentsConsole.sourcelink.json
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/B_UniversityStudentsConsole/obj/Debug/net9.0/B_UniversityStudentsConsole.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/B_UniversityStudentsConsole/obj/Debug/net9.0/refint/B_UniversityStudentsConsole.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/B_UniversityStudentsConsole/obj/Debug/net9.0/B_UniversityStudentsConsole.pdb
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/B_UniversityStudentsConsole/obj/Debug/net9.0/B_UniversityStudentsConsole.genruntimeconfig.cache
+/home/mage/Documents/Programme/Csharp_Masterclass/7_Linq/B_UniversityStudentsConsole/obj/Debug/net9.0/ref/B_UniversityStudentsConsole.dll

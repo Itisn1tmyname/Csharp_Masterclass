@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A_Console", "A_Console\A_Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B_UniversityStudentsConsole", "B_UniversityStudentsConsole\B_UniversityStudentsConsole.csproj", "{204505C0-817E-4433-BA6F-905B9B9CDCE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_LinqAndXML", "C_LinqAndXML\C_LinqAndXML.csproj", "{8FFFFEB3-DD22-4498-B6B5-4BE05836F074}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{204505C0-817E-4433-BA6F-905B9B9CDCE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{204505C0-817E-4433-BA6F-905B9B9CDCE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{204505C0-817E-4433-BA6F-905B9B9CDCE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FFFFEB3-DD22-4498-B6B5-4BE05836F074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FFFFEB3-DD22-4498-B6B5-4BE05836F074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FFFFEB3-DD22-4498-B6B5-4BE05836F074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FFFFEB3-DD22-4498-B6B5-4BE05836F074}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
