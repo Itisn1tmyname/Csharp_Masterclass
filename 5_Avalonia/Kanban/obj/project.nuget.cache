@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "87Zdl508Egc=",
+  "dgSpecHash": "BJO2K0qSN6c=",
   "success": true,
   "projectFilePath": "/home/mage/Documents/Programme/Csharp_Masterclass/5_Avalonia/Kanban/Kanban.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "/home/mage/.nuget/packages/avalonia.win32/12.0.5/avalonia.win32.12.0.5.nupkg.sha512",
     "/home/mage/.nuget/packages/avalonia.x11/12.0.5/avalonia.x11.12.0.5.nupkg.sha512",
     "/home/mage/.nuget/packages/avaloniaui.diagnosticssupport/2.2.3/avaloniaui.diagnosticssupport.2.2.3.nupkg.sha512",
+    "/home/mage/.nuget/packages/communitytoolkit.mvvm/8.4.1/communitytoolkit.mvvm.8.4.1.nupkg.sha512",
     "/home/mage/.nuget/packages/harfbuzzsharp/8.3.1.3/harfbuzzsharp.8.3.1.3.nupkg.sha512",
     "/home/mage/.nuget/packages/harfbuzzsharp.nativeassets.linux/8.3.1.3/harfbuzzsharp.nativeassets.linux.8.3.1.3.nupkg.sha512",
     "/home/mage/.nuget/packages/harfbuzzsharp.nativeassets.macos/8.3.1.3/harfbuzzsharp.nativeassets.macos.8.3.1.3.nupkg.sha512",

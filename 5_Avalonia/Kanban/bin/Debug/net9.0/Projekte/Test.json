@@ -1,0 +1,19 @@
+{
+  "Name":"Test",
+  "ToDo":
+  [
+    "Test 1",
+    "Neue Aufgabe",
+    "Daran Arbeite ich noch nicht"
+  ],
+  "Doing":
+  [
+    "Daran Arbeite ich gerade",
+    "Machen!"
+  ],
+  "Done":
+  [
+    "Das habe ich getan",
+    "Fertig"
+  ]
+}

@@ -90,3 +90,4 @@
 /home/mage/Documents/Programme/Csharp_Masterclass/5_Avalonia/Kanban/obj/Debug/net9.0/Kanban.pdb
 /home/mage/Documents/Programme/Csharp_Masterclass/5_Avalonia/Kanban/obj/Debug/net9.0/Kanban.genruntimeconfig.cache
 /home/mage/Documents/Programme/Csharp_Masterclass/5_Avalonia/Kanban/obj/Debug/net9.0/ref/Kanban.dll
+/home/mage/Documents/Programme/Csharp_Masterclass/5_Avalonia/Kanban/bin/Debug/net9.0/CommunityToolkit.Mvvm.dll
