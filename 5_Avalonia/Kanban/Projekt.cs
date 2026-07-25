@@ -20,7 +20,12 @@ public class Projekt
 
     public string ToJson()
     {
-        return JsonSerializer.Serialize(this);
+        return JsonSerializer.Serialize(this, new JsonSerializerOptions
+        {
+            WriteIndented = true,
+            IndentCharacter = ' ',
+            IndentSize = 3
+        });
     }
 
     public void AddItem(string item)
