@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="D_Linq2Sql/App.axaml" value="D_Linq2Sql/D_Linq2Sql.csproj" />
+        <entry key="D_Linq2Sql/DataGrid.axaml" value="D_Linq2Sql/D_Linq2Sql.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

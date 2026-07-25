@@ -1,0 +1,57 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Kanban.App"
+             RequestedThemeVariant="Light">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.Styles>
+        <FluentTheme />
+    </Application.Styles>
+             
+             
+    <Application.Resources>
+        
+        <ControlTheme x:Key="{x:Type Button}" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource ButtonBackground}"/>
+            <Setter Property="Foreground" Value="{StaticResource ButtonForeground}"/>
+            <Setter Property="Template">
+                <ControlTemplate>
+                    <Border Background="{TemplateBinding Background}"
+                            CornerRadius="10">
+                        <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          Content="{TemplateBinding Content}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            
+            <Style Selector="^:pointerover">
+                <Setter Property="Background" Value="{StaticResource ButtonBackgroundPointerOver}"/>
+                <Setter Property="Foreground" Value="{StaticResource ButtonForegroundPointerOver}"/>
+            </Style>
+            
+            <Style Selector="^:pressed">
+                <Setter Property="Background" Value="{StaticResource ButtonBackgroundPressed}"/>
+                <Setter Property="Foreground" Value="{StaticResource ButtonForegroundPressed}"/>
+            </Style>
+            
+            <Style Selector="^:disabled">
+                <Setter Property="Background" Value="{StaticResource ButtonBackgroundDisabled}"/>
+                <Setter Property="Foreground" Value="{StaticResource ButtonForegroundDisabled}"/>
+            </Style>
+            
+            <Style Selector="^.login">
+                <Setter Property="Height" Value="60"/>
+                <Setter Property="Width"  Value="175" />
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="Margin" Value="10"/>
+            </Style>
+            
+        </ControlTheme>
+        
+    </Application.Resources>
+             
+</Application>
