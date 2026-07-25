@@ -6,13 +6,15 @@ namespace Kanban;
 
 public class Projekt
 {
-    public required string Name { get; init; }
+    [JsonIgnore]
+    public required string FileName { get; init; }
     public required List<string> ToDo { get; init; }
     public required List<string> Doing { get; init; }
     public required List<string> Done { get; init; }
 
-    public Projekt(string json)
+    public Projekt(string json, string fileName)
     {
+        FileName = fileName;
         JsonSerializer.Deserialize<Projekt>(json);
     }
 
