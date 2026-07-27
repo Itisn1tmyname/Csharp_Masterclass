@@ -1,81 +1,38 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text.Json;
-using System.Text.RegularExpressions;
 using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Interactivity;
-using Avalonia.Layout;
 using CommunityToolkit.Mvvm.Input;
 
 namespace Kanban;
 
 public partial class MainWindow : Window
 {
-    private bool _hasProjects;
+    
     
     public MainWindow()
     {
         InitializeComponent();
-        StartButton.IsEnabled = false;
-        CheckProjects();
-        LoadProjects();
+        MainWindowContent.Content = new SelectionScreen(this);
+        Width = 800;
     }
 
-    private void CheckProjects()
+    public void ChangeMainWindowContent(Projekt projekt)
     {
-        try
-        {
-            Directory.CreateDirectory("Projekte");
-            Directory.SetCurrentDirectory("Projekte");
-            _hasProjects = 
-                Directory
-                .EnumerateFiles(Directory.GetCurrentDirectory())
-                .Any();
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            _hasProjects = false;
-        }
+        MainWindowContent.Content = new ProjectScreen(this, projekt);
+        Width = 1200;
     }
     
-    private void LoadProjects()
+    protected override void OnClosing(WindowClosingEventArgs e)
     {
-        if (!_hasProjects) return;
-
-        IEnumerable<string> files =
-            from file in Directory.EnumerateFiles(Directory.GetCurrentDirectory())
-            select Regex.Replace(new DirectoryInfo(file).Name, @"\..*", "");
-
-        ProjektBox.ItemsSource = files;
-    }
-    
-    
-    private void ProjektBox_OnSelectionChanged(object? sender, SelectionChangedEventArgs e)
-    {
-        if (ProjektBox.SelectedValue == null)
-            StartButton.IsEnabled = false;
-        else
-            StartButton.IsEnabled = true;
-    }
-    
-    #region ButtonClicks
-    
-    private void StartButton_OnClick(object? sender, RoutedEventArgs e)
-    {
-        App.MessageBox("Start Button not yet implemented");
+        base.OnClosing(e);
+        if (MainWindowContent.Content!.GetType() == typeof(ProjectScreen))
+            Save();
     }
 
-    private void NeuesProjektButton_OnClick(object? sender, RoutedEventArgs e)
+    private void Save()
     {
-        App.MessageBox("Button ist noch nicht fertig...");
+        ProjectScreen screen = (MainWindowContent.Content as ProjectScreen)!;
+        screen.Save();
     }
-    
-    #endregion
-
-    
-    
 }

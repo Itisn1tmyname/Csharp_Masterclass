@@ -2,20 +2,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" Width="800" Height="800" WindowStartupLocation="CenterOwner"
+        mc:Ignorable="d" WindowStartupLocation="CenterOwner"
         x:Class="Kanban.MainWindow"
         Title="Kanban">
     
-    <StackPanel Margin="50">
-        <Label Content="Bitte Projekt auswählen: " FontSize="20" Height="40"/>
-        <ListBox x:Name="ProjektBox" Height="600" FontSize="20"
-                 SelectionChanged="ProjektBox_OnSelectionChanged"/>
-        <StackPanel Orientation="Horizontal">
-            <Button Content="Start" Classes="login" Margin="0 10" x:Name="StartButton"
-                    Click="StartButton_OnClick"/>
-            <Button Content="Neues Projekt" Classes="login" Click="NeuesProjektButton_OnClick"/>
-        </StackPanel>
-    </StackPanel>
-    
+    <UserControl x:Name="MainWindowContent"/>
     
 </Window>

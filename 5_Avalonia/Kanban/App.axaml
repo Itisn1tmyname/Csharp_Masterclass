@@ -14,6 +14,7 @@
         <ControlTheme x:Key="{x:Type Button}" TargetType="Button">
             <Setter Property="Background" Value="{StaticResource ButtonBackground}"/>
             <Setter Property="Foreground" Value="{StaticResource ButtonForeground}"/>
+            <Setter Property="FontSize" Value="20"/>
             <Setter Property="Template">
                 <ControlTemplate>
                     <Border Background="{TemplateBinding Background}"
@@ -26,7 +27,6 @@
             </Setter>
             <Setter Property="HorizontalContentAlignment" Value="Center"/>
             <Setter Property="VerticalContentAlignment" Value="Center" />
-            <Setter Property="HorizontalAlignment" Value="Center" />
             
             <Style Selector="^:pointerover">
                 <Setter Property="Background" Value="{StaticResource ButtonBackgroundPointerOver}"/>
@@ -46,8 +46,13 @@
             <Style Selector="^.login">
                 <Setter Property="Height" Value="60"/>
                 <Setter Property="Width"  Value="175" />
-                <Setter Property="FontSize" Value="20" />
                 <Setter Property="Margin" Value="10"/>
+                <Setter Property="HorizontalAlignment" Value="Center" />
+            </Style>
+            
+            <Style Selector="^.project">
+                <Setter Property="VerticalAlignment" Value="Stretch"/>
+                <Setter Property="HorizontalAlignment" Value="Stretch"/>
             </Style>
             
         </ControlTheme>

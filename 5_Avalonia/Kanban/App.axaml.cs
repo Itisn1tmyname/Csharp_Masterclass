@@ -1,8 +1,14 @@
+using System;
+using System.Threading;
+using System.Windows.Input;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
+using Avalonia.Interactivity;
 using Avalonia.Layout;
 using Avalonia.Markup.Xaml;
+using Avalonia.Media;
+using Avalonia.Rendering;
 using CommunityToolkit.Mvvm.Input;
 
 namespace Kanban;
@@ -24,14 +30,15 @@ public partial class App : Application
         base.OnFrameworkInitializationCompleted();
     }
     
-    public static void MessageBox(string msg)
+    public static void MessageBoxJaNein(string msg, ICommand? command = null)
     {
-        Window messageBox = new Window();
-        messageBox.Title = "Attention";
-        messageBox.Width = 300;
-        messageBox.Height = 150;
-        messageBox.SizeToContent = SizeToContent.WidthAndHeight;
-        messageBox.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+        Window messageBox = new Window
+        {
+            Title = "Achtung",
+            MaxWidth = 400,
+            MinHeight = 130,
+            WindowStartupLocation = WindowStartupLocation.CenterOwner
+        };
         messageBox.Content = new StackPanel()
         {
             Margin = new Thickness(20),
@@ -41,25 +48,30 @@ public partial class App : Application
                 new TextBlock()
                 {
                     Text = msg,
+                    TextWrapping = TextWrapping.Wrap,
                     FontSize = 20
                 },
                 new StackPanel()
                 {
                     Orientation = Orientation.Horizontal,
-                    HorizontalAlignment = HorizontalAlignment.Right,
+                    HorizontalAlignment = HorizontalAlignment.Center,
                     Spacing = 8,
                     Children =
                     {
                         new Button()
                         {
-                            Content = "Yes",
-                            Command = new RelayCommand(messageBox.Close),
+                            Content = "Ja",
+                            Command = new RelayCommand(() =>
+                            {
+                                messageBox.Close();
+                                command?.Execute(null);
+                            }),
                             Width = 50,
                             Height = 50
                         },
                         new Button()
                         {
-                            Content = "No",
+                            Content = "Nein",
                             Command = new RelayCommand(messageBox.Close),
                             Width = 50,
                             Height = 50
@@ -68,7 +80,42 @@ public partial class App : Application
                 }
             }
         };
-        
+        messageBox.SizeToContent = SizeToContent.WidthAndHeight;
+        messageBox.Show();
+    }
+
+    // ReSharper disable once InconsistentNaming
+    public static void MessageBoxOK(string msg)
+    {
+        Window messageBox = new Window
+        {
+            Title = "Attention",
+            MaxWidth = 400,
+            MinHeight = 130,
+            WindowStartupLocation = WindowStartupLocation.CenterOwner
+        };
+        messageBox.Content = new StackPanel()
+        {
+            Margin = new Thickness(20),
+            Spacing = 16,
+            Children =
+            {
+                new TextBlock()
+                {
+                    Text = msg,
+                    TextWrapping = TextWrapping.Wrap,
+                    FontSize = 20
+                },
+                new Button()
+                {
+                    Content = "OK",
+                    Command = new RelayCommand(messageBox.Close),
+                    Width = 50,
+                    Height = 50
+                }
+            }
+        };
+        messageBox.SizeToContent = SizeToContent.WidthAndHeight;
         messageBox.Show();
     }
 

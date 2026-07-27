@@ -7,6 +7,9 @@
         <entry key="A_Test/Views/MainWindow.axaml" value="A_Test/A_Test.csproj" />
         <entry key="Kanban/App.axaml" value="Kanban/Kanban.csproj" />
         <entry key="Kanban/MainWindow.axaml" value="Kanban/Kanban.csproj" />
+        <entry key="Kanban/NeuesProjektWindow.axaml" value="Kanban/Kanban.csproj" />
+        <entry key="Kanban/ProjectScreen.axaml" value="Kanban/Kanban.csproj" />
+        <entry key="Kanban/SelectionScreen.axaml" value="Kanban/Kanban.csproj" />
         <entry key="KanbanB/App.axaml" value="KanbanB/KanbanB.csproj" />
       </map>
     </option>

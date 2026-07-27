@@ -1,0 +1,13 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" SizeToContent="WidthAndHeight"
+        x:Class="Kanban.NeuesProjektWindow"
+        Title="NeuesProjektWindow">
+    <StackPanel Spacing="25" Margin="50">
+        <Label FontSize="20" Content="Bitte geben Sie den Namen Ihres Projektes ein!"/>
+        <TextBox FontSize="20" Width="450" Height="50" VerticalContentAlignment="Center" x:Name="ProjektNameTextBox" TextChanged="ProjektNameTextBox_OnTextChanged"/>
+        <Button Content="Projekt erstellen" Classes="login" Click="ProjektErstellenButton_OnClick" x:Name="ProjektErstellenButton"/>
+    </StackPanel>
+</Window>

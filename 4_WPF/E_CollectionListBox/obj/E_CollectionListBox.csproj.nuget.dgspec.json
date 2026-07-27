@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Programme\\Csharp_Masterclass\\4_WPF\\E_CollectionListBox\\E_CollectionListBox.csproj": {}
+    "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\4_WPF\\E_CollectionListBox\\E_CollectionListBox.csproj": {}
   },
   "projects": {
-    "E:\\Programme\\Csharp_Masterclass\\4_WPF\\E_CollectionListBox\\E_CollectionListBox.csproj": {
+    "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\4_WPF\\E_CollectionListBox\\E_CollectionListBox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Programme\\Csharp_Masterclass\\4_WPF\\E_CollectionListBox\\E_CollectionListBox.csproj",
+        "projectUniqueName": "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\4_WPF\\E_CollectionListBox\\E_CollectionListBox.csproj",
         "projectName": "E_CollectionListBox",
-        "projectPath": "E:\\Programme\\Csharp_Masterclass\\4_WPF\\E_CollectionListBox\\E_CollectionListBox.csproj",
-        "packagesPath": "C:\\Users\\GedatkeM\\.nuget\\packages\\",
-        "outputPath": "E:\\Programme\\Csharp_Masterclass\\4_WPF\\E_CollectionListBox\\obj\\",
+        "projectPath": "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\4_WPF\\E_CollectionListBox\\E_CollectionListBox.csproj",
+        "packagesPath": "C:\\Users\\mgeda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\4_WPF\\E_CollectionListBox\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\GedatkeM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mgeda\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -68,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\mgeda\\.dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

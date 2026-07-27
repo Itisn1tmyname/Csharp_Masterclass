@@ -1,1 +1,19 @@
-{"Name":"Test2","ToDo":["Test 2","Neue Aufgabe","Daran Arbeite ich noch nicht"],"Doing":["Daran Arbeite ich gerade wirklich","Machen!"],"Done":["Das habe ich getan","Fertig jetzt"]}
+{
+  "Name": "Test2",
+  "ToDo": [
+    "Test 2",
+    "Neue Aufgabe",
+    "sdf"
+  ],
+  "Doing": [
+    "Daran Arbeite ich gerade wirklich",
+    "Machen!",
+    "Das habe ich getan",
+    "srdrfgsdf"
+  ],
+  "Done": [
+    "Fertig jetzt",
+    "Daran Arbeite ich noch nicht",
+    "Daran Arbeite ich noch nicht"
+  ]
+}

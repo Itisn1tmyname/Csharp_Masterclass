@@ -4,21 +4,13 @@ using System.Text.Json.Serialization;
 
 namespace Kanban;
 
-public class Projekt
+public class Projekt(string name)
 {
-    [JsonIgnore]
-    public required string FileName { get; init; }
-    public required List<string> ToDo { get; init; }
-    public required List<string> Doing { get; init; }
-    public required List<string> Done { get; init; }
+    public string Name { get; } = name;
 
-    public Projekt(string json, string fileName)
-    {
-        FileName = fileName;
-        JsonSerializer.Deserialize<Projekt>(json);
-    }
-
-    public Projekt() {}
+    public List<string> ToDo { get; init; } = [];
+    public List<string> Doing { get; init; } = [];
+    public List<string> Done { get; init; } = [];
 
     public string ToJson()
     {
@@ -26,7 +18,7 @@ public class Projekt
         {
             WriteIndented = true,
             IndentCharacter = ' ',
-            IndentSize = 3
+            IndentSize = 2
         });
     }
 
@@ -41,12 +33,6 @@ public class Projekt
     {
         ToDo.Remove(item);
         Doing.Add(item);
-    }
-
-    public void DoToDone(string item)
-    {
-        ToDo.Remove(item);
-        Done.Add(item);
     }
 
     public void DoingToDone(string item)
@@ -65,12 +51,6 @@ public class Projekt
     {
         Done.Remove(item);
         Doing.Add(item);
-    }
-
-    public void DoneToDo(string item)
-    {
-        Done.Remove(item);
-        ToDo.Add(item);
     }
     
     #endregion

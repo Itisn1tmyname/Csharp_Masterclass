@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/mage/Documents/Programme/Csharp_Masterclass/5_Avalonia/A_Test/A_Test.csproj": {}
+    "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\5_Avalonia\\A_Test\\A_Test.csproj": {}
   },
   "projects": {
-    "/home/mage/Documents/Programme/Csharp_Masterclass/5_Avalonia/A_Test/A_Test.csproj": {
+    "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\5_Avalonia\\A_Test\\A_Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mage/Documents/Programme/Csharp_Masterclass/5_Avalonia/A_Test/A_Test.csproj",
+        "projectUniqueName": "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\5_Avalonia\\A_Test\\A_Test.csproj",
         "projectName": "A_Test",
-        "projectPath": "/home/mage/Documents/Programme/Csharp_Masterclass/5_Avalonia/A_Test/A_Test.csproj",
-        "packagesPath": "/home/mage/.nuget/packages/",
-        "outputPath": "/home/mage/Documents/Programme/Csharp_Masterclass/5_Avalonia/A_Test/obj/",
+        "projectPath": "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\5_Avalonia\\A_Test\\A_Test.csproj",
+        "packagesPath": "C:\\Users\\mgeda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mgeda\\OneDrive\\Desktop\\Programme\\Csharp_Masterclass\\5_Avalonia\\A_Test\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/mage/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mgeda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -80,12 +86,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.17, 9.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[9.0.17, 9.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.17, 9.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.17, 9.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/mage/.dotnet/sdk/10.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
