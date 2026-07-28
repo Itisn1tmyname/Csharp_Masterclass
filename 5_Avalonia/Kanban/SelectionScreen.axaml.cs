@@ -17,14 +17,16 @@ public partial class SelectionScreen : UserControl
     public SelectionScreen(MainWindow window)
     {
         _window = window;
+        _window.Width = _window.MinWidth = 800;
         InitializeComponent();
-        StartButton.IsEnabled = false;
         CheckProjects();
         LoadProjects();
     }
     
     private void CheckProjects()
     {
+        StartButton.IsEnabled = false;
+        ProjektLoeschenButton.IsEnabled = false;
         try
         {
             Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
@@ -53,16 +55,22 @@ public partial class SelectionScreen : UserControl
 
         ProjektBox.ItemsSource = files;
     }
-    
-    
+
+
     private void ProjektBox_OnSelectionChanged(object? sender, SelectionChangedEventArgs e)
     {
         if (ProjektBox.SelectedValue == null)
+        {
             StartButton.IsEnabled = false;
+            ProjektLoeschenButton.IsEnabled = false;
+        }
         else
+        {
             StartButton.IsEnabled = true;
+            ProjektLoeschenButton.IsEnabled = true;
+        }
     }
-    
+
     #region ButtonClicks
     
     private void StartButton_OnClick(object? sender, RoutedEventArgs e)
@@ -88,4 +96,19 @@ public partial class SelectionScreen : UserControl
     }
     
     #endregion
+
+    private void ProjektLoeschenButton_OnClick(object? sender, RoutedEventArgs e)
+    {
+        try
+        {
+            string name = (string)ProjektBox.SelectedValue!;
+            File.Delete($"{name}.json");
+            CheckProjects();
+            LoadProjects();
+        }
+        catch (Exception exception)
+        {
+            App.MessageBoxOK($"{exception.Message}\n\n{exception.StackTrace}");
+        }
+    }
 }

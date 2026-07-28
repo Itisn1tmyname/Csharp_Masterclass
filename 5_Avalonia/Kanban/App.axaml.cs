@@ -35,7 +35,8 @@ public partial class App : Application
         Window messageBox = new Window
         {
             Title = "Achtung",
-            MaxWidth = 400,
+            MinWidth = 200,
+            MaxWidth = 800,
             MinHeight = 130,
             WindowStartupLocation = WindowStartupLocation.CenterOwner
         };
@@ -90,7 +91,8 @@ public partial class App : Application
         Window messageBox = new Window
         {
             Title = "Attention",
-            MaxWidth = 400,
+            MinWidth = 200,
+            MaxWidth = 800,
             MinHeight = 130,
             WindowStartupLocation = WindowStartupLocation.CenterOwner
         };

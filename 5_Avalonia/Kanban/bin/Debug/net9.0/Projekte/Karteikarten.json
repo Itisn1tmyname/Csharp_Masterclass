@@ -1,0 +1,18 @@
+{
+  "Name": "Karteikarten",
+  "ToDo": [
+    "Login Screen XAML erstellen",
+    "Datenstruktur / Tabellen erstellen",
+    "Hauptmenu XAML erstellen",
+    "Anonym -\u003E User -\u003E Admin Inheritance",
+    "Admin kann im Hauptmenu Button f\u00FCr Nutzer ansehen, auch fremde Kartensets bearbeiten/l\u00F6schen",
+    "User kann neue Sets/Karten erstellen und eigene Sets/Karten bearbeiten",
+    "Anonym kann tempor\u00E4re Sets (Alle Karten, gefiltert und sortiert/gemischt) erstellen, aber keine dauerhaften und keine neuen Karten",
+    "Karusell, um Karteikarten in einem Set zu durchbl\u00E4ttern"
+  ],
+  "Doing": [
+    "Frage Aussehen XAML erstellen",
+    "Antwort Aussehen XAML erstellen"
+  ],
+  "Done": []
+}

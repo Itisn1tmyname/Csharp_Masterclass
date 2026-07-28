@@ -13,14 +13,26 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        MainWindowContent.Content = new SelectionScreen(this);
-        Width = 800;
+        ChangeMainWindowContent();
     }
 
     public void ChangeMainWindowContent(Projekt projekt)
     {
         MainWindowContent.Content = new ProjectScreen(this, projekt);
-        Width = 1200;
+        AdjustWindowPositionMid();
+    }
+
+    public void ChangeMainWindowContent()
+    {
+        MainWindowContent.Content = new SelectionScreen(this);
+        AdjustWindowPositionMid();
+    }
+
+    public void AdjustWindowPositionMid()
+    {
+        int x = (int)(Screens.Primary!.Bounds.Width  - Width)  / 2,
+            y = (int)(Screens.Primary!.Bounds.Height - Height) / 2;
+        Position = new PixelPoint(x, y);
     }
     
     protected override void OnClosing(WindowClosingEventArgs e)
